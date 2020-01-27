@@ -18,10 +18,10 @@ class UserWishList extends React.Component {
             const apartments = await getWishListApartments(userId);
             await this.setState({
                 curUserWishListApartments:apartments.data
-            })
+        })
         }
 
-    }
+    } 
     render() {
         let curApartments = this.state.curUserWishListApartments &&
             this.state.curUserWishListApartments.map((mapping,m) =>
