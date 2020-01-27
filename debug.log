@@ -1,0 +1,336 @@
+[0125/184445.964:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740740000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.028:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0125/184446.028:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdf90000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.029:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\ntdll.dll
+[0125/184446.029:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc340000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.029:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\KERNEL32.dll
+[0125/184446.029:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb4a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.029:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\KERNELBASE.dll
+[0125/184446.029:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffccb400000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.029:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\79.0.3945.117\chrome_elf.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf8720000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\VERSION.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbb70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\msvcrt.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc0b0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\ADVAPI32.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbfe0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\sechost.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdc30000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\RPCRT4.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb180000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\SspiCli.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcadf70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\79.0.3945.117\chrome_child.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998f40000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\OLEAUT32.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbb10000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.030:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\WS2_32.dll
+[0125/184446.030:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf3c90000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\IPHLPAPI.DLL
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf86f0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINMM.dll
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb390000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\WINTRUST.dll
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb1b0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\CRYPT32.dll
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfa680000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\USERENV.dll
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf9a30000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\DWrite.dll
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf85a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINSPOOL.DRV
+[0125/184446.031:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf56a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.031:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\dbghelp.dll
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf5570000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.032:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\Secur32.dll
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf1c90000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.032:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINHTTP.dll
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf3a60000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.032:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\dhcpcsvc.DLL
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbd70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.032:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\combase.dll
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc0a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.032:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\NSI.dll
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf3c70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.032:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINNSI.DLL
+[0125/184446.032:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf8320000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINMMBASE.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb6f0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\USER32.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb160000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\MSASN1.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb0b0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\profapi.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb5c0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\cfgmgr32.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf9ed0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\DEVOBJ.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbc20000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\GDI32.dll
+[0125/184446.033:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8999010000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.033:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\IMM32.DLL
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdd70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\MSCTF.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc560000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\ole32.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfaf80000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\CRYPTBASE.DLL
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfaf10000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\bcryptPrimitives.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740740000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdf90000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\ntdll.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc340000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\KERNEL32.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb4a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\KERNELBASE.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffccb400000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.034:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\79.0.3945.117\chrome_elf.dll
+[0125/184446.034:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf8720000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.035:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\VERSION.dll
+[0125/184446.035:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbb70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.035:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\msvcrt.dll
+[0125/184446.035:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc0b0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.035:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\ADVAPI32.dll
+[0125/184446.035:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbfe0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.035:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\sechost.dll
+[0125/184446.035:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdc30000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.035:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\RPCRT4.dll
+[0125/184446.035:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb180000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.035:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\SspiCli.dll
+[0125/184446.036:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcadf70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.036:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\79.0.3945.117\chrome_child.dll
+[0125/184446.036:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998f40000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.036:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\OLEAUT32.dll
+[0125/184446.036:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbb10000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.036:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\WS2_32.dll
+[0125/184446.036:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf3c90000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.036:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\IPHLPAPI.DLL
+[0125/184446.036:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf86f0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.036:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINMM.dll
+[0125/184446.036:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb390000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\WINTRUST.dll
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb1b0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\CRYPT32.dll
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfa680000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\USERENV.dll
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf9a30000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\DWrite.dll
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf85a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINSPOOL.DRV
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf56a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\dbghelp.dll
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf5570000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.037:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\Secur32.dll
+[0125/184446.037:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf1c90000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINHTTP.dll
+[0125/184446.038:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf3a60000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\dhcpcsvc.DLL
+[0125/184446.038:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbd70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\combase.dll
+[0125/184446.038:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc0a0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\NSI.dll
+[0125/184446.038:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf3c70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINNSI.DLL
+[0125/184446.038:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf8320000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\WINMMBASE.dll
+[0125/184446.038:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb6f0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.038:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\USER32.dll
+[0125/184446.039:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb160000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.039:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\MSASN1.dll
+[0125/184446.039:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb0b0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.039:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\profapi.dll
+[0125/184446.039:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfb5c0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.039:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\cfgmgr32.dll
+[0125/184446.039:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcf9ed0000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.039:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\DEVOBJ.dll
+[0125/184446.039:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfbc20000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.039:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\GDI32.dll
+[0125/184446.039:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8999010000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.039:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\IMM32.DLL
+[0125/184446.040:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdd70000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.040:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\MSCTF.dll
+[0125/184446.040:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfc560000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.040:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\ole32.dll
+[0125/184446.040:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfaf80000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.040:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\CRYPTBASE.DLL
+[0125/184446.040:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfaf10000 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.040:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\bcryptPrimitives.dll
+[0125/184446.141:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998b3d000 of 77824 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.142:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899b7dd000 of 12288 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.142:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899bfd3000 of 53248 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.143:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899c7dc000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.143:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899cfdc000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.144:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899d7de000 of 8192 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.144:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899dfdd000 of 12288 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.145:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e9db000 of 20480 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.145:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899f1dd000 of 12288 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.145:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899f9dd000 of 12288 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.146:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a03dd000 of 12288 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.146:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a0bdd000 of 12288 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.146:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a2a4c000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.146:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a3acc000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.147:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a42cc000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.147:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a4bcc000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.147:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a4dce000 of 8192 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.148:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a564c000 of 16384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.148:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89c855e000 of 8192 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.148:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c90860 of 16408 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.149:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c94880 of 1012 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.149:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c94e98 of 118 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.149:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c94f10 of 894 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.149:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95290 of 118 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.149:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95308 of 96 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.149:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95380 of 58 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95480 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95600 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95810 of 126 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c95f60 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c96110 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c964b0 of 68 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.150:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c96500 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9c8c0 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9c960 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9c9b0 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9ca50 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9caa0 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9caf0 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9cd20 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9cd70 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.151:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9ce10 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.152:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9ce60 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.152:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9ceb0 of 58 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.152:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9cf00 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.152:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9cf50 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.153:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9cfa0 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.153:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9cff0 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.153:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9d5d0 of 54 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.153:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9dbb0 of 154 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.153:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9dc60 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.154:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9dd80 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.154:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9f030 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.154:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998c9f9c0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.154:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca3eb0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.154:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca4310 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.154:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca4f50 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca5070 of 158 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca5220 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca7d70 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca7e90 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca7fb0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca92d0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca93f0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.155:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9510 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9630 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9750 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9870 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9990 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9ab0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9bd0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.156:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9cf0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9e10 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998ca9f30 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998caa050 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab000 of 80 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab340 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab3e0 of 58 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.157:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab6b0 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab7a0 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab7f0 of 66 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab930 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab980 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cab9d0 of 58 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabac0 of 58 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.158:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabb10 of 60 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabc00 of 58 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabca0 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabe30 of 66 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabe80 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabed0 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabf20 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cabf70 of 62 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cac300 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cac420 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cac780 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cac8a0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cacae0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cad080 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cad2c0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cad3e0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cad500 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.160:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cad740 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.161:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cadbc0 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.161:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cadf20 of 132 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.161:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cb7f50 of 896 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.161:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998cbc370 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.162:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998f10c40 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.162:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998f10e80 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.162:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8998f122c0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.162:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89990c37b0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.162:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89992c5740 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8999300690 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8999313fe0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x8999315a90 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899931a630 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89993362d0 of 712 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89993d0000 of 680 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.163:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89993dff80 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.164:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e02f260 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.164:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e058e80 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.164:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e174fb0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.164:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e176170 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.164:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e1b11a0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.164:ERROR:process_memory_win.cc(73)] ReadMemory at 0x899e1bbf50 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a1508690 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a1508b50 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a15324e0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a1532fc0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a156d200 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a1783d60 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.165:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a182ce20 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.166:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a2d43870 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.166:ERROR:process_memory_win.cc(73)] ReadMemory at 0x89a2d49f00 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.166:ERROR:process_memory_win.cc(73)] ReadMemory at 0xfd266a71490 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.166:ERROR:process_memory_win.cc(73)] ReadMemory at 0xfd266af809c of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.166:ERROR:process_memory_win.cc(73)] ReadMemory at 0xfd266b34020 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.166:ERROR:process_memory_win.cc(73)] ReadMemory at 0x558be5c04000 of 384 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.167:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740182000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.167:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740184000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.167:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740186000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.167:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740188000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.168:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff74018a000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.168:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff74018c000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.168:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740190000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.168:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740192000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.169:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740194000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.169:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740196000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.169:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff740198000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.169:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff74019a000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.170:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff74019c000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.170:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff74019e000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.170:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7402c4000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.170:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7402c6000 of 852 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.170:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7402c8000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.170:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7402ca000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.171:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7402cc000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.171:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7402ce000 of 6024 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.171:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcafa2ef1c of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.171:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcb1060c40 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.171:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcb203a680 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcb2854d50 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcb292f9a0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcb2bcf690 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcb2f89dea of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffccb427bc3 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffccb4283ba of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdf995d0 of 18 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.172:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdfac4d0 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.173:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfdfcac70 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.173:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfe02067a of 592 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.173:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfe021f6a of 960 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.173:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfe0be8a8 of 40 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.173:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfe0beb00 of 512 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.173:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcfe0c1320 of 64 bytes failed: ‏‏רק חלק מבקשות ReadProcessMemory או מבקשות WriteProcessMemory הושלמו. (0x12B)
+[0125/184446.648:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
