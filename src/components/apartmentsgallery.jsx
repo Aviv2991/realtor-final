@@ -25,6 +25,8 @@ class BuildApartmentsGallery extends React.Component{
           showMore:false,
           filterObj:{},
           countries:[],
+          firstPage:1,
+          apartmentsLength:null
         }
       }
       handleSearch = (event) =>{
@@ -41,6 +43,22 @@ class BuildApartmentsGallery extends React.Component{
       async componentDidMount() {
           this.getApartments();
           this.getCountries();
+          this.setApartmentsLength();
+      }
+      async setApartmentsLength(){
+          try{
+            const curObj = this.state.filterObj;
+            curObj['size'] = 1000;
+            const query = this.queryBuild(curObj)
+            const apartments = await getAllApartments(query);
+            await this.setState({
+              apartmentsLength:Object.values(apartments)[0].length
+            })
+          }catch(error){
+              throw new Error(`getting apartments length failed with: ${error.message}`)
+          }
+          
+          
       }
      async getApartments(query = ''){
          try{
@@ -102,9 +120,37 @@ class BuildApartmentsGallery extends React.Component{
         await this.getCitiesByCountryName(countryName)
         await this.handleSearch(eventCopy);
       }
+      handleprev = async(e)=>{
+            e.preventDefault();
+          if(this.state.firstPage == 1){
+              return;
+          }else{
+            const curObj = this.state.filterObj;
+            curObj['page'] =this.state.firstPage -=1;
+            curObj['size'] = 20;
+            await this.setState({
+                filterObj:curObj,
+                apartmentsLength:this.state.apartmentsLength += 20
 
-      render(){ 
-        console.log(this.state)
+            },() => this.getApartments(this.queryBuild(this.state.filterObj)))
+          }
+      }
+      handleNext = async(e) => {
+        e.preventDefault();
+        if(this.state.apartmentsLength-20 > 0){
+            const curObj = this.state.filterObj;
+            curObj['page'] =this.state.firstPage +=1;
+            curObj['size'] = 20;
+            await this.setState({
+                filterObj:curObj,
+                apartmentsLength:this.state.apartmentsLength -= 20
+            },() => this.getApartments(this.queryBuild(this.state.filterObj))); 
+        }else{
+            return;
+        }
+      }
+      render(){
+          console.log(this.state)
           let firstapps = this.state.apartments.apartments ?
                         Object.values(this.state.apartments)[0].map((mapping,m ) =>
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
@@ -228,12 +274,18 @@ class BuildApartmentsGallery extends React.Component{
                   </Form>
                   
                 <div className = {'container-fluid'}>
-                    <div className = {'row'}>
+                    <div className = {'row'}>   
                         {firstapps}
                           
                     </div>
                 </div>
-                {/* {!this.state.showMore ? <button onClick={this.handleshowmore}>SHOW MORE</button> : <button onClick={this.handleshowmore}>SHOW LESS</button>} */}
+                    <nav aria-label="Page navigation example">
+                        <ul style={{display:'flex',justifyContent:'center'}} class="pagination">
+                          <li onClick={(e)=>this.handleprev(e)} class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        
+                          <li onClick={(e)=>this.handleNext(e)} class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
               </div>
           );
       }

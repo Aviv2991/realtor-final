@@ -7,6 +7,10 @@ import BuildNavigation from './components/buildnavigation.jsx';
 import Home from './components/home.jsx';
 import StudentForm from './components/form.jsx';
 import Profile from './components/userProfile';
+import NewApartmentForm from './components/addNewApartment';
+import UserApartments from './components/userApartments';
+import UserWishList from './components/userWishList';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,6 +42,7 @@ class App extends React.Component {
                 </li>
               </ul>
             </nav>
+            
             <Switch>
                 <Route path='/apartments'>
                   <BuildApartmentsGallery/>
@@ -45,13 +50,23 @@ class App extends React.Component {
                 <Route path='/cities'> 
                   <BuildCitiesGallery/>
                 </Route>
-                <Route path='/apartment/:id' component={Apartment}/>
+                <Route path='/apartment/:apartment_id' component={Apartment}/>
                 <Route path='/form' component={StudentForm}>
                   
                 </Route>
                 <Route path='/user_profile' component={Profile}>
                   
                 </Route>
+                <Route path='/new_apartment' component={NewApartmentForm}>
+
+                </Route>
+                <Route path='/my_apartments' component={UserApartments}>
+
+                </Route>
+                <Route path='/my_wish_list' component={UserWishList}>
+
+                </Route>
+
                 <Route path='/'>
                     <Home/>
                 </Route>

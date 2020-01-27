@@ -1,6 +1,9 @@
 import React from 'react';
 import {Carousel} from 'react-bootstrap';
 import Heart from './heart.jsx';
+import Cookies from 'js-cookie';
+import {addApartmentToWishList,getWishListApartments} from '../api/controllers/apartments';
+
 
 class Apartment extends React.Component{
     
@@ -17,16 +20,21 @@ class Apartment extends React.Component{
     
     async componentDidMount(){
         try{
-            const apartment = await fetch(`http://localhost:3000/apartments/${this.props.match.params.id}`);
+
+            const apartment = await fetch(`http://localhost:3000/apartments/${this.props.match.params.apartment_id}`);
             const data = await apartment.json();
             this.onSuccess(data);
+            if(Cookies.get('login')){
+                this.setState({wishList:await getWishListApartments(JSON.parse(Cookies.get('login')).id)})
+            }
+            
 
         }catch(error){
             throw new Error(`get aaprtment failed with:${error.message}`);
         }
         
         try{
-            const apartmentImages = await fetch(`http://localhost:3000/apartments/${this.props.match.params.id}/images`);
+            const apartmentImages = await fetch(`http://localhost:3000/apartments/${this.props.match.params.apartment_id}/images`);
             const imagesData = await apartmentImages.json();
             this.handleSingleSuccess(imagesData);
         }catch(error){
@@ -40,13 +48,33 @@ class Apartment extends React.Component{
         }
 
     onSuccess = (success) => {
-        const appId= parseInt(this.props.match.params.id);
+        const appId= parseInt(this.props.match.params.apartment_id);
         const apartment = success.find(apartment => apartment.id === appId);
         this.setState({
             apartment: apartment,
             appSqft:apartment.sqft,
             loading: false
         })
+    }
+    handleLike = () => {
+
+        const apartmentId = this.props.match.params.apartment_id;
+        const userId = JSON.parse(Cookies.get('login')).id;
+        if(!this.checkIfApartmentAlreadyExistsInWishList(apartmentId)){
+            addApartmentToWishList({apartmentId,userId});
+        }
+        
+    }
+
+    checkIfApartmentAlreadyExistsInWishList=(appId)=>{
+        console.log(this.state.wishList)
+        for(let app in this.state.wishList.data){
+            console.log('bla',this.state.wishList.data[app].id,appId)
+            if(this.state.wishList.data[app].id == appId){
+                return true;
+            }
+        }
+        return false;
     }
     
     render(){
@@ -77,7 +105,7 @@ class Apartment extends React.Component{
                         <span style={{color:"white"}}>{this.state.appSqft} sqft</span>
                     </div>
                 </div>
-                <div className={'d-flex justify-content-center align-items-center'} style={heartWrapperStyle}>
+                <div onClick={this.handleLike} className={'d-flex justify-content-center align-items-center'} style={heartWrapperStyle}>
                     <Heart/>
 
                 </div>
@@ -89,7 +117,7 @@ class Apartment extends React.Component{
                 <ul className={'d-flex'}>
                     <li style={{fontSize:'20px'}} className={'mr-3'}>{apartment.number_of_bath}<span className={'text-black-50 ml-1'}>bed</span></li>
                     <li style={{fontSize:'20px'}} className={'mr-3'}>{apartment.number_of_room}<span className={'text-black-50 ml-1'}>bath</span></li>
-                    <li style={{fontSize:'20px'}}>{apartment.sqft}<span className={'text-black-50 ml-1'}>sqft lot</span></li>
+                    <li style={{fontSize:'20px'}}>{this.state.appSqft}<span className={'text-black-50 ml-1'}>sqft lot</span></li>
 
                 </ul>
                 <p style={{fontSize:'20px'}} className={'bold'}>Property Address: {apartment.address}</p>
