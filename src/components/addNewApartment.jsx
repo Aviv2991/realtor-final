@@ -104,9 +104,9 @@ class NewApartmentForm extends React.Component {
                     formData.append(prop,this.state[prop].value);
                 }
             }
-            formData.append('availability','available');
-            formData.append('user_id', JSON.parse(Cookies.get('login')).id);
-            formData.append('status', 'pending'); 
+            formData.set('availability','available');
+            formData.set('user_id', JSON.parse(Cookies.get('login')).id);
+            formData.set('status', 'pending'); 
             
 
             //Send the data somewhere
@@ -167,7 +167,7 @@ class NewApartmentForm extends React.Component {
                     Please fill out the form with correct information and then submit
                 </p>
                 <hr />
-                <form onSubmit={this.onSubmit}>
+                <form enctype="multipart/form-data" onSubmit={this.onSubmit} >
                     <div className="row form-group">
                         <div style={{textAlign:'left'}} className="col-md-4 offset-md-1">
                             <label htmlFor="exampleInputEmail1">Country</label>
