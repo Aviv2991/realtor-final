@@ -5,6 +5,11 @@ import Heart from './heart';
 import Price from './price';
 import Address from './address';
 import EmailAgent from './emailagent';
+import Garbage from './garbage';
+import Deny from './deny';
+import Approval from './approval';
+import Recover from './recover';
+
 class BuildCard extends React.Component {
     render() {
         const {id,apartment_id,main_image,price,number_of_bath,number_of_room,address,sqft,label,name,country} = this.props;
@@ -13,8 +18,8 @@ class BuildCard extends React.Component {
             <div className = {"card-wrapper col-lg-3 col-md-4 col-sm-6 py-3"}>
                <Link className = {'text-decoration-none text-dark'} to={this.props.apartment_id ? `/apartment/${this.props.apartment_id}` : `/apartment/${this.props.id}`}> 
                 <div className = {"image-wrapper"} style={{height: "200px", backgroundImage:mainImageUrl,backgroundSize:'cover',backgroundRepeat:'no-repeat',position:'relative'}}>
-                    {number_of_room &&<Rectangel/>}
-                    {number_of_room &&<Heart className={'stickToTopAndRight'}/>}
+                    {/* {number_of_room &&<Rectangel/>} */}
+                    {/* {number_of_room &&<Heart className={'stickToTopAndRight'}/>} */}
                     <Price price={price}/>
                 </div>
                 <ul style = {{listStyle:'none'}} className = {"text-wrapper d-flex justify-content-between"}>
@@ -23,8 +28,13 @@ class BuildCard extends React.Component {
                     {this.props.sqft?<li><span className = {'bold'}>{this.props.sqft}</span> sqft</li>:<li>{label}</li>}
                 </ul>
                 <Address address = {this.props.address}/>
-                <EmailAgent beds = {this.props.number_of_room}/>
                 </Link>
+                {window.location.href==='http://localhost:3001/my_apartments' && <Garbage id={id}  className='garbage'/>}
+
+                {window.location.href==='http://localhost:3001/approved_apartments' && <Garbage id={id}  className='garbage'/>}
+                {window.location.href==='http://localhost:3001/pending_apartments' && <Approval id={id} className='approval'/>}
+                {window.location.href==='http://localhost:3001/pending_apartments' && <Deny id={id} className='deny'/>}
+                {window.location.href==='http://localhost:3001/removed_apartments' && <Recover id={id} className='recover'/>}
             </div>
         );
     }

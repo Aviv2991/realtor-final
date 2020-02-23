@@ -11,24 +11,26 @@ class UserApartments extends React.Component {
             curUserApartments:null,
         }
     }
+
     async componentDidMount(){
         const userId= JSON.parse(Cookies.get('login')).id;
         const apartments = await getApartmentsByUserId(userId);
         await this.setState({
             curUserApartments:apartments.data
         })
-
-        console.log(apartments.data);
     }
+    
     render () {
         let curApartments = this.state.curUserApartments ?
             this.state.curUserApartments.map((mapping,m) =>
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
         return (
-            <div className={'container-fluid'}>
+            <div>
                 <h1 style={{textAlign:'center'}}>My Properties</h1>
-                <div className={'row'}>
-                    {curApartments}
+                <div className={'container'}>
+                    <div className={'row'}>
+                        {curApartments}
+                    </div>
                 </div>
             </div>
         );

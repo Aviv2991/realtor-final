@@ -34,6 +34,7 @@ class Apartment extends React.Component{
         }
         
         try{
+            console.log(this.props.match.params.apartment_id)
             const apartmentImages = await fetch(`http://localhost:3000/apartments/${this.props.match.params.apartment_id}/images`);
             const imagesData = await apartmentImages.json();
             this.handleSingleSuccess(imagesData);
@@ -87,14 +88,6 @@ class Apartment extends React.Component{
                 <Carousel className={'position-relative'}>  
                     {curCarouselImages}
                 </Carousel>
-                <form style={formStyle} className={'position-absolute d-flex flex-column p-2'} action="">
-                    <p className={'text-center bold'}>More about this property</p>
-                    <input className={'mb-2 rounded'} placeholder='Full Name' type="text"/>
-                    <input className={'mb-2 rounded'} placeholder='Email Address' type="text"/>
-                    <input className={'mb-2 rounded'} placeholder='Phone Number' type="text"/>
-                    <textarea className={'mb-2 rounded'} placeholder='I am interested in 109-76 141st St.'></textarea>
-                    <button id='agenthover' style={emailAgentStyle} className={'bg-dark text-white'}>Email Agent</button>  
-                </form>
                 <div style={{position:'absolute',top:'90%'}} className={'d-flex'}>
                     <div className={'bold text-white p-1 mx-2'} style={{backgroundColor:'green',fontSize:'12px'}}>10 Hours Ago</div>
                     <div className={'bold mx-2'} style={sqftWrapperStyle}>
@@ -107,10 +100,7 @@ class Apartment extends React.Component{
                 </div>
                 <div onClick={this.handleLike} className={'d-flex justify-content-center align-items-center'} style={heartWrapperStyle}>
                     <Heart/>
-
                 </div>
-                
-                
             </div>
             <div style={{borderBottom:'1px solid grey',width:'80%'}} className={'container mt-4'}>
                 <p className={'bold'} style={{fontSize:'30px'}}>{apartment.price/1000000} Million $</p>
@@ -118,7 +108,6 @@ class Apartment extends React.Component{
                     <li style={{fontSize:'20px'}} className={'mr-3'}>{apartment.number_of_bath}<span className={'text-black-50 ml-1'}>bed</span></li>
                     <li style={{fontSize:'20px'}} className={'mr-3'}>{apartment.number_of_room}<span className={'text-black-50 ml-1'}>bath</span></li>
                     <li style={{fontSize:'20px'}}>{this.state.appSqft}<span className={'text-black-50 ml-1'}>sqft lot</span></li>
-
                 </ul>
                 <p style={{fontSize:'20px'}} className={'bold'}>Property Address: {apartment.address}</p>
                 {/* <div style={{top:'105%',right:'10%'}} id={"map-container-google-1"} className={"z-depth-1-half map-container position-absolute"} >
@@ -126,11 +115,6 @@ class Apartment extends React.Component{
                     style={{border:"0"}}></iframe>
                 </div> */}
             </div>
-            
-            
-                
-
-            
         </div>
         );
     }
@@ -138,7 +122,5 @@ class Apartment extends React.Component{
 export default Apartment;
 
 //STYLING
-const formStyle={right:'15px',top:'0',width:'225px',backgroundColor:'#eaeaea'}
-const emailAgentStyle={borderRadius:'25px',border:'none'}
 const sqftWrapperStyle={backgroundColor:'rgba(0, 0, 0,.6)',height:'fit-content',width:'fit-content',padding:'0 5px'}
 const heartWrapperStyle={width:'60px',height:'60px',borderRadius:'100%',backgroundColor:'#f60707',position:'absolute',bottom:'-20px',right:'20%'}

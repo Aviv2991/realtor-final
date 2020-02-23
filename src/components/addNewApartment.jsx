@@ -7,8 +7,9 @@ import Cookies from 'js-cookie';
 import {Form} from 'react-bootstrap';
 import {propertyTypes} from '../filterValues.js';
 
+var FormData = require('form-data');
 
-console.log(propertyTypes);
+
 class NewApartmentForm extends React.Component {
     constructor(props){
         super(props);
@@ -47,7 +48,7 @@ class NewApartmentForm extends React.Component {
                 value,
                 errors
             }
-        },console.log(this.state));
+        });
     }
     async fileChange(e){
         let filesArr = [...e.target.files];  
@@ -56,12 +57,12 @@ class NewApartmentForm extends React.Component {
     }
 
     onSubmit = async e => {
+        console.log(this.state)
         e.preventDefault();
         // debugger;
         const formData = new FormData();
         let isOK = true;
         let errors;
-        console.log(this.state)
         for(let prop in this.state){
         
             if(prop === 'countries' || prop === 'cities' || prop === 'selectedCountry' || prop === 'images'){
@@ -77,7 +78,6 @@ class NewApartmentForm extends React.Component {
 
             }
             if(errors.length){
-                console.log('im in')
                 isOK = false;
                 this.setState({
                     [prop]: {
@@ -104,30 +104,29 @@ class NewApartmentForm extends React.Component {
                     formData.append(prop,this.state[prop].value);
                 }
             }
-            console.log(this.state.availability);
-            console.log(this.state.status);
             formData.append('availability','available');
             formData.append('user_id', JSON.parse(Cookies.get('login')).id);
             formData.append('status', 'pending'); 
             
 
             //Send the data somewhere
-            const values={ //
-            address:this.state.address, // 
-            city_id:this.state.city_id,   // 
-            number_of_room:this.state.number_of_room, // 
-            number_of_bath:this.state.number_of_bath, // 
-            sqft:this.state.sqft, // 
-            description:this.state.description, // 
-            sale_status:this.state.sale_status,  
-            availability: this.state.availability, 
-            property_type:this.state.property_type, //
-            main_image:this.state.main_image,
-            price:this.state.price,//
+        //     const values={ //
+        //     address:this.state.address, // 
+        //     city_id:this.state.city_id,   // 
+        //     number_of_room:this.state.number_of_room, // 
+        //     number_of_bath:this.state.number_of_bath, // 
+        //     sqft:this.state.sqft, // 
+        //     description:this.state.description, // 
+        //     sale_status:this.state.sale_status,  
+        //     availability: this.state.availability, 
+        //     property_type:this.state.property_type, //
+        //     main_image:this.state.main_image,
+        //     price:this.state.price,//
 
-        }
-
+        // }
+            
             const response = await addNewApartment(formData);
+            console.log(response)
         }    
     } 
     onCountrySelected = async (event) => {
@@ -161,7 +160,6 @@ class NewApartmentForm extends React.Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <div className="alert alert-success" role="alert">
                 <h4 className="alert-heading text-center">Add New Apartment</h4>

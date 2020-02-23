@@ -3,7 +3,7 @@ const navProps=[
         label:'Buy',
         innerMenu:[
             [{headtitle:'Homes for Sale'},
-            {title:'Ney York Homes For Sale',href:'/'},
+            {title:'Ney York Homes For Sale',href:'http://localhost:3001/apartments'},
             {title:'New York Homes Communities',href:'/'},
             {title:'New York Construction And Plans',href:'/'},
             {title:'New York Foreclosures',href:'/'},
@@ -59,85 +59,6 @@ const navProps=[
             {title:'Renting With Pets',href:'/'},
             {title:'More Renting Insights',href:'/'}]
         ]
-    },
-    {
-        label:'Mortgage',
-        innerMenu:[
-            [{headtitle:'Mortgage Rates'},
-            {title:'Get Pre-Approved',href:'/'},
-            {title:'Mortgage Rates',href:'/'},
-            {title:'Home Equity Financing Rates',href:'/'},
-            {title:'Refinance Rates',href:'/'},
-            {title:'Finance Advice',href:'/'},
-            {title:'For Veterans',href:'/'}],
-
-            [{headtitle:'Calculators'},
-            {title:'Mortgage Calculator',href:'/'},
-            {title:'Refinance Calculator',href:'/'},
-            {title:'How Much House Can I Afford',href:'/'},
-            {title:'Rent vs. Buy',href:'/'},
-            {title:'Price Perfect Find My Buying Power',href:'/'}],
-
-            [{headtitle:'Finance Advice'},
-            {title:'6 Ways Home Buyers Mess Up Getting a Mortgage',href:'/'},
-            {title:'Mortgage Guide',href:'/'},
-            {title:'More Finance Insights'}]
-        ]
-    },
-    {
-        label:'Find Realtors',
-        innerMenu:[
-            [{headtitle:'Find REALTORS'},
-            {title:'New York REALTORS',href:'/'},
-            {title:'Top Rated New York REALTORS',href:'/'},
-            {title:'Search For a Real Estate Agent',href:'/'}
-            ],
-            [{headtitle:'Why Use a REALTOR'},
-            {title:'6 Reasons You Should Never Buy Or Sell a Home Without an Agent',href:'/'},
-            {title:'Difference Between Agent,Broker & REALTOR',href:'/'},
-            {title:'Listing vs. Buyer Agent',href:'/'},
-            {title:'How To Find a REALTOR'}],
-
-            [{headtitle:'News Around REALTORS'},
-            {title:'Real Estate Agents Reveal the Toughest Home Buyers They Have Ever Met',href:'/'},
-            {title:'More News Around REALTORS'}]
-        ]
-    },
-    {
-        label:'My Home',
-        innerMenu:[]
-    },
-    {
-        label:'News & Insights',
-        innerMenu:[
-            [{headtitle:'News'},
-            {title:'The Latest News', href:'/'},
-            {title:'Housing Trends',href:'/'},
-            {title:'Real Estate News',href:'/'},
-            {title:'Celebrity Real Estate',href:'/'},
-            {title:'Unique Homes',href:'/'},
-            {title:'For Pros',href:'/'},
-            {title:'Corporate Blog',href:'/'}],
-
-            [{headtitle:'Insights'},
-            {title:'Buying',href:'/'},
-            {title:'Selling',href:'/'},
-            {title:'Renting',href:'/'},
-            {title:'Financing',href:'/'},
-            {title:'Moving',href:'/'},
-            {title:'Home Improvement',href:'/'},
-            {title:'Research',href:'/'}],
-
-            [{headtitle:'Guides & More'},
-            {title:'The 5 Maintenance Skills All Homeowners Should Know',href:'/'},
-            {title:'First Time Home Buyer Resource Center',href:'/'},
-            {title:'Mortgage Guide',href:'/'},
-            {title:'Veterans Home Buying Guide', href:'/'},
-            {title:'Real Estate Videos',href:'/'},
-            {title:'Housing Resources',href:'/'}]
-        ]
-
     }
-
 ];
 export {navProps};

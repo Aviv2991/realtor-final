@@ -63,6 +63,7 @@ class BuildApartmentsGallery extends React.Component{
      async getApartments(query = ''){
          try{
             const apartments = await getAllApartments(query);
+            console.log(apartments)
             this.setState({
               apartments,
               toFilterArr:apartments
@@ -155,7 +156,7 @@ class BuildApartmentsGallery extends React.Component{
                         Object.values(this.state.apartments)[0].map((mapping,m ) =>
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
           return(
-              <div>
+              <div style={{margin:'2% 0'}}>
                   <Form>
                       <Form.Row>
                       {this.state.countries.countries  &&
