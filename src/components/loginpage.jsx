@@ -57,6 +57,8 @@ class Popup extends React.Component{
     }  
     render(){
         return(
+            <div className='conatainer'>
+                <div className='row'>
             <div style={{position:'relative'}}>
                 <div style={loginWrapperStyle}>
                 <button onClick={this.props.handleLogin} style={xBtnStyle}>X</button>
@@ -89,6 +91,8 @@ class Popup extends React.Component{
                 </div>
                 
                 </div>
+            </div>
+            </div>
             </div>
         );
     }

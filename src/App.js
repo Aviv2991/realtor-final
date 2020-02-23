@@ -10,6 +10,12 @@ import Profile from './components/userProfile';
 import NewApartmentForm from './components/addNewApartment';
 import UserApartments from './components/userApartments';
 import UserWishList from './components/userWishList';
+import AdminPage from './components/adminPage';
+import PendingApartments from './components/pendingApartments';
+import ApprovedApartments from './components/approvedApartments';
+import RemovedApartments from './components/removedApartments';
+import Login from './components/login';
+import Register from './components/registration';
 
 import {
   BrowserRouter as Router,
@@ -25,51 +31,37 @@ class App extends React.Component {
         <Router>
         <BuildNavigation/>
           <div>
-            <nav>
-              <ul style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                <li>
-                  <Link to="/"><button style={linksBtnStyle}>Go to Home Page</button></Link>
-                </li>
-                <li style={{margin:'25px 50px'}} id='apartments'>
-                  <Link to='/apartments'><button style={linksBtnStyle}>Show Apartments Gallery</button></Link>   
-                </li>
-                <li id='cities'>
-                  <Link to='/cities'><button style={linksBtnStyle}>Show Cities Gallery</button></Link>
-                </li>
-                <li>
-                <Link to='/form'><button style={linksBtnStyle}>Show Form</button></Link>
-
-                </li>
-              </ul>
-            </nav>
-            
             <Switch>
-                <Route path='/apartments'>
-                  <BuildApartmentsGallery/>
-                </Route>
-                <Route path='/cities'> 
-                  <BuildCitiesGallery/>
-                </Route>
+                <Route path='/apartments' component={BuildApartmentsGallery}/>
+
+                <Route path='/cities' component={BuildCitiesGallery}/>
+
                 <Route path='/apartment/:apartment_id' component={Apartment}/>
-                <Route path='/form' component={StudentForm}>
-                  
-                </Route>
-                <Route path='/user_profile' component={Profile}>
-                  
-                </Route>
-                <Route path='/new_apartment' component={NewApartmentForm}>
 
-                </Route>
-                <Route path='/my_apartments' component={UserApartments}>
+                <Route path='/form' component={StudentForm}/>
 
-                </Route>
-                <Route path='/my_wish_list' component={UserWishList}>
+                <Route path='/user_profile' component={Profile}/>
 
-                </Route>
+                <Route path='/new_apartment' component={NewApartmentForm}/>
 
-                <Route path='/'>
-                    <Home/>
-                </Route>
+                <Route path='/my_apartments' component={UserApartments}/>
+
+                <Route path='/my_wish_list' component={UserWishList}/>
+
+                <Route path='/admin_page' component={AdminPage}/>
+
+                <Route path='/pending_apartments' component={PendingApartments}/>
+
+                <Route path='/approved_apartments' component={ApprovedApartments}/>
+
+                <Route path='/removed_apartments' component={RemovedApartments}/>
+
+                <Route path='/login_page' component={Login}/>
+
+                <Route path='/registration_page' component={Register}/>
+
+                <Route path='/' component={Home}/>
+
               </Switch>
           </div>
         </Router>

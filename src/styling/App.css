@@ -52,6 +52,26 @@
   color: white;
   font-size: 25px;
 }
+.garbage{
+  position: absolute;
+  right: 10%;
+  bottom: 27%;
+}
+.approval{
+  position: absolute;
+  bottom: 5%;
+  right: 25%;
+}
+.deny{
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+.recover{
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+}
 ul{
   padding-left: 0;
   list-style: none;
@@ -140,7 +160,7 @@ ul{
 
 .h5gradient{
  
-    background: -webkit-linear-gradient(black,blue);
+    background: -webkit-linear-gradient(white,green);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
