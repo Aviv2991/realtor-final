@@ -34,7 +34,9 @@ export async function addNewApartment (obj) {
     for (let value of obj.values()) {
       console.log(value); 
   }
-    const response = await fetcher.post('/apartments', obj);
+    const response = await fetcher.post('/apartments',obj, {
+      headers: {'Content-Type': 'multipart/form-data' }
+    });
     console.log(response)
     return response.data;
 }catch(error){
