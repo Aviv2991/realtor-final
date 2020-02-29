@@ -1,6 +1,5 @@
 import React from 'react';
 import validate, {field} from '../validator';
-import InputErrors from '../inputError';
 import {signup} from '../api/controllers/signup';
 import Cookies from 'js-cookie';
 
@@ -105,7 +104,6 @@ export default Signup;
 const loginInputStyle={width:'400px',height:'45px',fontSize:'14px',padding:'6px 12px',marginBottom:'10px'}
 const loginButtonStyle={background:'rgb(217, 34, 40)',color:'white',width:'165px',padding:'6px 16px',fontSize:'14px',borderRadius:'30px',fontWeight:'bold'}
 const loginWithFacebookStyle={color:'white',fontWeight:'bold',width:'415px',background:'rgb(57, 88, 155)',padding:'6px 16px',margin:'24px 0',borderRadius:'30px'}
-const proLoginStyle={background:'rgb(0, 153, 204)',color:'white',width:'180px',borderRadius:'30px',margin:'24px 0'}
 const loginWithGoogleStyle={border:'1px solid rgb(196, 196, 196)',borderRadius:'30px',background:'white',width:'415px',padding:'6px 16px',fontSize:'14px',margin:'0 0 24px 0'}
 const signUpWrapper={boxShadow:'8px 8px 8px 8px',position:'absolute',top:'55px',right:'235px',width:'900px',display:'flex',backgroundColor:'white',zIndex:'1000'}
 const xBtnStyle={border:'none',backgroundColor:'white',fontSize:'20px',fontWeight:'bold',position:'absolute',top:'10px',right:'10px'}
@@ -113,5 +111,3 @@ const leftDivStyle={margin:'25px',textAlign:'left'}
 const h2Style={fontSize:'24px',marginBottom:'10px'}
 const formStyle={marginTop:'10px',display:'flex',flexDirection:'column',justifyContent:'left'}
 const innerSignupStyle={display:'flex',marginTop:'30px',marginLeft:'15px'}
-const rightDivStyle={position:'relative',marginTop:'35px',textAlign:'left'}
-const bottomImgStyle={width:'400px',height:'100px',position:'absolute',bottom:'0',left:'0'}

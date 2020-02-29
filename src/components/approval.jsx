@@ -3,9 +3,7 @@ import {approveApartmentById} from '../api/controllers/apartments';
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
 class Approve extends React.Component{
-    constructor(props){
-        super(props);
-    }
+
     handleApproval=async()=>{
         const apartmentId = this.props.id;
         await approveApartmentById(apartmentId);

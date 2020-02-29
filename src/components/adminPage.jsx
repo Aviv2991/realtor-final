@@ -6,7 +6,7 @@ class AdminPage extends React.Component {
         return (
   
             <div className="d-flex flex-column">
-                <h2 style = {{textAlign:'center',margin:'5% 0'}}>Welcome to Admin Page</h2>
+                <h1 className='styledh1' style = {{textAlign:'center',margin:'5% 0'}}>Welcome to Admin Page</h1>
                 <ButtonGroup size="lg">
                     <Button><Link style={linkStyle} to='/pending_apartments'>Show me pending requests</Link></Button>
                     <Button><Link style={linkStyle} to='/approved_apartments'>Show me all approved properties</Link></Button>

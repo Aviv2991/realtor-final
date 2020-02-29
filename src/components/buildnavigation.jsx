@@ -1,12 +1,6 @@
 import React from 'react';
 import {navProps} from '../nav.js';
-import coloredIphoneImg from '../imgs/color-iphone.png';
-import realtorH from '../imgs/realtor-h.png';
-import realtorTV from '../imgs/realtor-tv.jpg';
 import {Navbar,Nav,Fade,Dropdown} from 'react-bootstrap';
-import whiteiphone from '../imgs/whiteiphone.png';
-import Popup from './loginpage.jsx';
-import Signup from './signuppage.jsx';
 import Cookies from 'js-cookie';
 import {Link} from 'react-router-dom';
 import GoToHomePage from './goToHomePageLogo';
@@ -60,16 +54,16 @@ class BuildNavigation extends React.Component {
         if(user){
             this.setState({
                 activeUser:JSON.parse(user),
-            },() => console.log(this.state.activeUser.first_name))
+            })
         }      
     }
     render() {
         return( 
             <Navbar style = {{height:'50px',position:'relative'}} collapseOnSelect expand = "lg" bg = "dark" variant = "dark">
                 <Navbar.Brand href = "/"><GoToHomePage/></Navbar.Brand>
-                <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
-                <Navbar.Collapse id = "responsive-navbar-nav">
-                    <Nav className = "mr-auto">
+                <Navbar.Toggle variant = "dark" bg = "dark" aria-controls = "responsive-navbar-nav" />
+                <Navbar.Collapse style={{backgroundColor:'#343a40',borderTop:'1px solid grey',display:'flex'}} id = "responsive-navbar-nav">
+                    <Nav style={{width:'100%',padding:'1% 0',zIndex:'999'}} className='d-flex flex-row justify-content-around'>
                         {navProps.map((data,i) => {
                         return(
                             <Nav.Link key = {i} onMouseOver = {() => this.active(i)} onMouseOut = {() => this.active(-1)}>
@@ -97,9 +91,7 @@ class BuildNavigation extends React.Component {
             </Nav.Link>
         );
     })}
-    </Nav>
-    <Nav style={{marginRight:'15%'}}>
-        {this.state.activeUser ?
+    {this.state.activeUser ?
              <Dropdown style={{marginTop:'5px'}}>
                 <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
                     Hello {this.state.activeUser.first_name} 
@@ -116,18 +108,13 @@ class BuildNavigation extends React.Component {
              </Dropdown.Menu>
            </Dropdown>
                 : <Link style={upperLinksStyle} to='/login_page'>Login</Link>
-            // : <Nav.Link onClick = {(e) => this.handleLogin(e)} >Log In</Nav.Link>
         }
-      {/* {this.state.popupLoginActive && <Popup handleLogin = {this.handleLogin}/>} */}
 
       {!this.state.activeUser &&
         <Link style={upperLinksStyle} to='/registration_page'>Register</Link>
-        // <Nav.Link onClick={(e) => this.handleSignup(e)} >Sign Up</Nav.Link>
        }
-
-      {/* {this.state.popupSignupActive && <Signup handleSignup = {this.handleSignup}/>} */}
-      
     </Nav>
+        
   </Navbar.Collapse>
 </Navbar>                    
         );

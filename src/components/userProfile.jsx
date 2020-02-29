@@ -23,7 +23,7 @@ class Profile extends React.Component {
                     <AdminPage/> 
                     :
                     <div className="d-flex flex-column">
-                        <h2 style = {{textAlign:'center',margin:'5% 0'}}>Hello Dear {name} !</h2>
+                        <h2 className='styledh1'>Hello {name} !</h2>
                         <ButtonGroup size="lg">
                             <Button><Link style={linkStyle} to='/new_apartment'>Add New Apartment</Link></Button>
                             <Button><Link style={linkStyle} to='/my_apartments'>Show me my properties!</Link></Button>

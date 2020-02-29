@@ -4,9 +4,7 @@ import {deleteApartmentById} from '../api/controllers/apartments';
 
 
 class Garbage extends React.Component{
-    constructor(props){
-        super(props);
-    }
+
     handleDeletion=async ()=>{
         const apartmentId =this.props.id;
         console.log(apartmentId)

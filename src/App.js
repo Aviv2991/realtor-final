@@ -21,7 +21,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 }from 'react-router-dom';
 
 class App extends React.Component {
@@ -73,4 +72,3 @@ class App extends React.Component {
 
 
 export default App;
-const linksBtnStyle={width:'100px',height:'100px',borderRadius:'50%',background:'grey',color:'white',border:'none'}

@@ -23,7 +23,7 @@ class RemovedApartments extends React.Component{
             })
         return(
             <div>
-                <h1 style={{textAlign:'center'}}>Removed Apartments</h1>
+                <h1 className='styledh1'>Removed Apartments</h1>
                 <div className={'container'}>
                     <div className={'row'}>
                         {curRemovedApartments}

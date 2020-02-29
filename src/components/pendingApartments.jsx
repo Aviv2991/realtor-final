@@ -22,7 +22,7 @@ class PendingApartments extends React.Component{
             })
         return(
             <div>
-                <h1 style={{textAlign:'center'}}>Pending Requests</h1>
+                <h1 className='styledh1'>Pending Requests</h1>
                 <div className={'container'}>
                     <div className={'row'}>
                         {curPendingApartments}
