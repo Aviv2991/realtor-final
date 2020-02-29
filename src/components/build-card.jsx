@@ -1,10 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Rectangel from './rectangle';
-import Heart from './heart';
 import Price from './price';
 import Address from './address';
-import EmailAgent from './emailagent';
 import Garbage from './garbage';
 import Deny from './deny';
 import Approval from './approval';
@@ -12,7 +9,7 @@ import Recover from './recover';
 
 class BuildCard extends React.Component {
     render() {
-        const {id,apartment_id,main_image,price,number_of_bath,number_of_room,address,sqft,label,name,country} = this.props;
+        const {id,price,number_of_bath,number_of_room,label,name,country} = this.props;
         const mainImageUrl = `url('http://localhost:3000/${this.props.main_image}')`;
         return(
             <div className = {"card-wrapper col-lg-3 col-md-4 col-sm-6 py-3"}>

@@ -63,7 +63,6 @@ class BuildApartmentsGallery extends React.Component{
      async getApartments(query = ''){
          try{
             const apartments = await getAllApartments(query);
-            console.log(apartments)
             this.setState({
               apartments,
               toFilterArr:apartments
@@ -123,7 +122,7 @@ class BuildApartmentsGallery extends React.Component{
       }
       handleprev = async(e)=>{
             e.preventDefault();
-          if(this.state.firstPage == 1){
+          if(this.state.firstPage === 1){
               return;
           }else{
             const curObj = this.state.filterObj;
@@ -151,7 +150,6 @@ class BuildApartmentsGallery extends React.Component{
         }
       }
       render(){
-          console.log(this.state)
           let firstapps = this.state.apartments.apartments ?
                         Object.values(this.state.apartments)[0].map((mapping,m ) =>
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
@@ -281,10 +279,10 @@ class BuildApartmentsGallery extends React.Component{
                     </div>
                 </div>
                     <nav aria-label="Page navigation example">
-                        <ul style={{display:'flex',justifyContent:'center'}} class="pagination">
-                          <li onClick={(e)=>this.handleprev(e)} class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <ul style={{display:'flex',justifyContent:'center'}} className="pagination">
+                          <li onClick={(e)=>this.handleprev(e)} className="page-item"><a className="page-link" href="/">Previous</a></li>
                         
-                          <li onClick={(e)=>this.handleNext(e)} class="page-item"><a class="page-link" href="#">Next</a></li>
+                          <li onClick={(e)=>this.handleNext(e)} className="page-item"><a className="page-link" href="/">Next</a></li>
                         </ul>
                     </nav>
               </div>

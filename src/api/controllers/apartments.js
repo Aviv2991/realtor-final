@@ -2,9 +2,7 @@ import fetcher from '../fetcher';
 
 export async function getAllApartments(query = ''){
     try{
-      console.log('getting here')
         const {data} = await fetcher.get(`/apartments?${query}`)
-        console.log('data',data)
         return data;
     }catch(error) {
       throw new Error(`Get aprtment failed with:${error.message}`)
@@ -31,13 +29,9 @@ export async function getAllApartments(query = ''){
 
 export async function addNewApartment (obj) {
   try{
-    for (let value of obj.values()) {
-      console.log(value); 
-  }
     const response = await fetcher.post('/apartments',obj, {
       headers: {'Content-Type': 'multipart/form-data' }
     });
-    console.log(response)
     return response.data;
 }catch(error){
     // throw new Error(`Cant login. ${error.message}`);
@@ -46,8 +40,6 @@ export async function addNewApartment (obj) {
 export async function addApartmentToWishList(wishListObj){
   try{
     const response = await fetcher.post('/wish_list',wishListObj);
-    console.log('response',response)
-
     return response.data;
   }catch(error){
     throw new Error(`adding apartment to wish list failed with ${error.message}`)
@@ -78,7 +70,7 @@ export async function approveApartmentById(apartmentId){
     return response;
   }catch(error){
     throw new Error(`Approve apartment failed with: ${error.message}`)
-  }
+  } 
 }
 
 export async function denyApartmentById(apartmentId){

@@ -2,7 +2,7 @@ import React from 'react';
 import validate, {field} from '../validator';
 import InputErrors from '../inputError'; 
 import {getAllCountries,getCitiesByCountryName} from '../api/controllers/countries';
-import {addNewApartment,addImagesToApartment} from '../api/controllers/apartments';
+import {addNewApartment} from '../api/controllers/apartments';
 import Cookies from 'js-cookie';
 import {Form} from 'react-bootstrap';
 import {propertyTypes} from '../filterValues.js';
@@ -88,7 +88,6 @@ class NewApartmentForm extends React.Component {
             }
         }
         if(isOK){
-            const result = {};
             for(let prop in this.state){ 
                 if(prop === 'countries' || prop === 'cities' || prop === 'selectedCountry' ){
                     continue

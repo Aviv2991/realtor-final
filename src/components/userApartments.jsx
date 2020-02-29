@@ -26,7 +26,7 @@ class UserApartments extends React.Component {
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
         return (
             <div>
-                <h1 style={{textAlign:'center'}}>My Properties</h1>
+                <h1 className='styledh1'>My Properties</h1>
                 <div className={'container'}>
                     <div className={'row'}>
                         {curApartments}

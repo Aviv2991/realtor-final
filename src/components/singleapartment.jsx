@@ -71,7 +71,7 @@ class Apartment extends React.Component{
         console.log(this.state.wishList)
         for(let app in this.state.wishList.data){
             console.log('bla',this.state.wishList.data[app].id,appId)
-            if(this.state.wishList.data[app].id == appId){
+            if(this.state.wishList.data[app].id === appId){
                 return true;
             }
         }
