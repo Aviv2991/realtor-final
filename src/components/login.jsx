@@ -1,11 +1,14 @@
 import React from 'react';
 import Cookies from 'js-cookie';
+
 import validate, {field} from '../validator';
 import InputErrors from '../inputError';
+
 import {login} from '../api/controllers/login';
 
-class Login extends React.Component{
-    constructor(props){
+class Login extends React.Component {
+
+    constructor(props) {
         super(props);
         this.state = {
             username: field({name: 'username', isRequired: true, pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/}),
@@ -25,6 +28,7 @@ class Login extends React.Component{
             }
         });
     }
+
     onSubmit = async e => {
         e.preventDefault();
         let isOK = true;
@@ -41,6 +45,7 @@ class Login extends React.Component{
                 });
             }
         }
+
         if(isOK){
             const result = {};
             for(let prop in this.state){
@@ -50,11 +55,12 @@ class Login extends React.Component{
             console.log(result);
             const response = await login(this.state.username.value, this.state.password.value);
             if(response){
-                window.location.assign('http://localhost:3001/user_profile');
+                window.location.assign('http://localhost:3002/user_profile');
             }
             console.log(Cookies.get('login'));
         }
     }  
+    
     render(){
         return(
             <>

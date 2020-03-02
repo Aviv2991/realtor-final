@@ -1,10 +1,12 @@
 import React from 'react';
+import Cookies from 'js-cookie';
+
+import {Form} from 'react-bootstrap';
 import validate, {field} from '../validator';
 import InputErrors from '../inputError'; 
+
 import {getAllCountries,getCitiesByCountryName} from '../api/controllers/countries';
 import {addNewApartment} from '../api/controllers/apartments';
-import Cookies from 'js-cookie';
-import {Form} from 'react-bootstrap';
 import {propertyTypes} from '../filterValues.js';
 
 var FormData = require('form-data');
@@ -57,9 +59,7 @@ class NewApartmentForm extends React.Component {
     }
 
     onSubmit = async e => {
-        console.log(this.state)
         e.preventDefault();
-        // debugger;
         const formData = new FormData();
         let isOK = true;
         let errors;
@@ -67,10 +67,6 @@ class NewApartmentForm extends React.Component {
         
             if(prop === 'countries' || prop === 'cities' || prop === 'selectedCountry' || prop === 'images'){
                 continue
-            }
-            else if(prop instanceof Object){
-                console.log(prop)
-                
             }
             else{
                 const field = this.state[prop];
@@ -106,36 +102,17 @@ class NewApartmentForm extends React.Component {
             formData.set('availability','available');
             formData.set('user_id', JSON.parse(Cookies.get('login')).id);
             formData.set('status', 'pending'); 
-            
 
-            //Send the data somewhere
-        //     const values={ //
-        //     address:this.state.address, // 
-        //     city_id:this.state.city_id,   // 
-        //     number_of_room:this.state.number_of_room, // 
-        //     number_of_bath:this.state.number_of_bath, // 
-        //     sqft:this.state.sqft, // 
-        //     description:this.state.description, // 
-        //     sale_status:this.state.sale_status,  
-        //     availability: this.state.availability, 
-        //     property_type:this.state.property_type, //
-        //     main_image:this.state.main_image,
-        //     price:this.state.price,//
-
-        // }
-            
             const response = await addNewApartment(formData);
-            console.log(response)
         }    
     } 
     onCountrySelected = async (event) => {
-        // debugger;
         const countryObj = this.state.country;
         countryObj.value = event.target.value;
         await this.setState({country:countryObj})     
-        // get cities
         await this.getCitiesByCountryName(countryObj.value)
       }
+
       onCitySelected = async (event) => {
         const cityObj = this.state.city;
         cityObj.value = event.target.value;
@@ -144,6 +121,7 @@ class NewApartmentForm extends React.Component {
             city_id:cityObj
         });
       }
+
       async getCitiesByCountryName(countryName) {
         try {
             await this.setState({selectedCountry:!this.state.selectedCountry})
@@ -152,7 +130,6 @@ class NewApartmentForm extends React.Component {
             this.setState({
               cities:citiesData
             })
-            
         }catch(error) {
             throw new Error(`get cities failed with:${error.message}`)
         }

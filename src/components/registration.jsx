@@ -61,7 +61,7 @@ class Register extends React.Component{
             const response = await signup(values);
             if(response){
                 console.log('yesh response')
-                window.location.assign('http://localhost:3001/');
+                window.location.assign('http://localhost:3002/');
             }
             console.log(Cookies.get('login'));
         }

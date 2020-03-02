@@ -1,16 +1,19 @@
 import React from 'react';
+
 import {getApartmentsByStatus} from '../api/controllers/apartments';
+
 import BuildCard from './build-card';
 
 
 class RemovedApartments extends React.Component{
+
     constructor(){
         super();
-        this.state={
+        this.state = {
             removedApartments:null
         }
     }
-    async componentDidMount(){
+    async componentDidMount() {
         const apartments = await getApartmentsByStatus('removed')
         await this.setState({
             removedApartments:apartments.data

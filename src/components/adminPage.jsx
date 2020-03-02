@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {Link} from 'react-router-dom';
 import {Button,ButtonGroup} from 'react-bootstrap';
+
 class AdminPage extends React.Component {
-    render(){
+    render() {
         return (
   
             <div className="d-flex flex-column">

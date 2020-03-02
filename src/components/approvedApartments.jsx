@@ -1,8 +1,8 @@
 import React from 'react';
-import {getApartmentsByStatus} from '../api/controllers/apartments';
+
 import BuildCard from './build-card';
 
-
+import {getApartmentsByStatus} from '../api/controllers/apartments';
 
 class ApprovedApartments extends React.Component{
     constructor(){
@@ -11,12 +11,14 @@ class ApprovedApartments extends React.Component{
             approvedApartments:null
         }
     }
+
     async componentDidMount(){
         const apartments = await getApartmentsByStatus('approved');
         await this.setState({
             approvedApartments:apartments.data
         })
     }
+    
     render(){
         let curApprovedApartments = this.state.approvedApartments &&
             this.state.approvedApartments.map((apartment,a)=>{

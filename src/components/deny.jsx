@@ -1,20 +1,22 @@
 import React from 'react';
-import {denyApartmentById} from '../api/controllers/apartments';
+
 import {OverlayTrigger,Tooltip} from 'react-bootstrap';
+
+import {denyApartmentById} from '../api/controllers/apartments';
 
 class Deny extends React.Component{
 
-    handleDenying= async ()=>{
+    handleDenying= async () => {
         const apartmentId = this.props.id;
         await denyApartmentById(apartmentId);
         await window.location.reload()
     }
-    render(){
+    render() {
         function renderTooltip(props) {
             return <Tooltip {...props}>Deny Apartment</Tooltip>;
           }
        
-        return(
+        return (
             <OverlayTrigger
                 placement="right"
                 delay={{ show: 250, hide: 400 }}

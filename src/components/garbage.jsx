@@ -1,20 +1,24 @@
 import React from 'react';
+
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
+
 import {deleteApartmentById} from '../api/controllers/apartments';
 
 
 class Garbage extends React.Component{
 
-    handleDeletion=async ()=>{
-        const apartmentId =this.props.id;
+    handleDeletion = async () => {
+        const apartmentId = this.props.id;
         console.log(apartmentId)
         await deleteApartmentById(apartmentId)
         await window.location.reload();
     }
-    render(){
+
+    render() {
         function renderTooltip(props) {
             return <Tooltip {...props}>Delete Apartment</Tooltip>;
           }
+          
         return(
             <OverlayTrigger
                 placement="right"

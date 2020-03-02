@@ -29,24 +29,25 @@ class BuildApartmentsGallery extends React.Component{
           apartmentsLength:null
         }
       }
-      handleSearch = (event) =>{
-        const name=event.target.name;
-        const value=event.target.value;
+
+      handleSearch = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
         const curObj = this.state.filterObj;
-        curObj[name] =value;
+        curObj[name] = value;
         this.setState({
             filterObj:curObj,
         },() => this.getApartments(this.queryBuild(this.state.filterObj)));
     }
 
-
-      async componentDidMount() {
+      async componentDidMount () {
           this.getApartments();
           this.getCountries();
           this.setApartmentsLength();
       }
-      async setApartmentsLength(){
-          try{
+
+      async setApartmentsLength () {
+          try {
             const curObj = this.state.filterObj;
             curObj['size'] = 1000;
             const query = this.queryBuild(curObj)
@@ -57,9 +58,8 @@ class BuildApartmentsGallery extends React.Component{
           }catch(error){
               throw new Error(`getting apartments length failed with: ${error.message}`)
           }
-          
-          
       }
+
      async getApartments(query = ''){
          try{
             const apartments = await getAllApartments(query);
@@ -71,6 +71,7 @@ class BuildApartmentsGallery extends React.Component{
           throw new Error(`get aaprtment failed with:${error.message}`)
         }
       }
+
       async getCountries() {
         try {
             const countries = await fetch(`http://localhost:3000/countries`)
@@ -82,6 +83,7 @@ class BuildApartmentsGallery extends React.Component{
           throw new Error(`get aaprtment failed with:${error.message}`)
         }
       }
+
       async getCitiesByCountryName(countryName) {
           try {
               const cities = await fetch(`http://localhost:3000/countries/${countryName}/cities`);
@@ -94,6 +96,7 @@ class BuildApartmentsGallery extends React.Component{
               throw new Error(`get cities failed with:${error.message}`)
           }
       }
+
       queryBuild(obj) {
           let resultQuery = '';
           for(let curProp in obj){
@@ -104,22 +107,24 @@ class BuildApartmentsGallery extends React.Component{
           }
           return resultQuery;
       }
+
       handleshowmore = () => {
         this.setState({
             showMore:!this.state.showMore,
         })
       }
+
       handleSubmit = (event) => {
           event.preventDefault()
       };
+
        onCountrySelected = async (event) => {
-        // debugger;
         const eventCopy = {...event};   
         const countryName = eventCopy.target.value;     
-        // get cities
         await this.getCitiesByCountryName(countryName)
         await this.handleSearch(eventCopy);
       }
+
       handleprev = async(e)=>{
             e.preventDefault();
           if(this.state.firstPage === 1){
@@ -135,6 +140,7 @@ class BuildApartmentsGallery extends React.Component{
             },() => this.getApartments(this.queryBuild(this.state.filterObj)))
           }
       }
+
       handleNext = async(e) => {
         e.preventDefault();
         if(this.state.apartmentsLength-20 > 0){
@@ -149,6 +155,7 @@ class BuildApartmentsGallery extends React.Component{
             return;
         }
       }
+
       render(){
           let firstapps = this.state.apartments.apartments ?
                         Object.values(this.state.apartments)[0].map((mapping,m ) =>
@@ -156,7 +163,7 @@ class BuildApartmentsGallery extends React.Component{
           return(
               <div style={{margin:'2% 0'}}>
                   <Form>
-                      <Form.Row>
+                    <Form.Row>
                       {this.state.countries.countries  &&
                         <Form.Group controlId = "countries">
                             <Form.Control name = 'country' onChange = {this.onCountrySelected} as = "select" style = {{width:'150px'}}>
@@ -271,7 +278,6 @@ class BuildApartmentsGallery extends React.Component{
                            </Form.Group>
                       </Form.Row>
                   </Form>
-                  
                 <div className = {'container-fluid'}>
                     <div className = {'row'}>   
                         {firstapps}
@@ -281,7 +287,6 @@ class BuildApartmentsGallery extends React.Component{
                     <nav aria-label="Page navigation example">
                         <ul style={{display:'flex',justifyContent:'center'}} className="pagination">
                           <li onClick={(e)=>this.handleprev(e)} className="page-item"><a className="page-link" href="/">Previous</a></li>
-                        
                           <li onClick={(e)=>this.handleNext(e)} className="page-item"><a className="page-link" href="/">Next</a></li>
                         </ul>
                     </nav>

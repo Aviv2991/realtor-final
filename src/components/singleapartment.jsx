@@ -1,7 +1,10 @@
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
-import Heart from './heart.jsx';
 import Cookies from 'js-cookie';
+
+import {Carousel} from 'react-bootstrap';
+
+import Heart from './heart.jsx';
+
 import {addApartmentToWishList,getWishListApartments} from '../api/controllers/apartments';
 
 
@@ -9,18 +12,15 @@ class Apartment extends React.Component{
     
     constructor(props){
         super(props);
-        
-
-        this.state={
+        this.state = {
             apartment:'',
             appImages:[],
             loading: true,
         }
     }
     
-    async componentDidMount(){
+    async componentDidMount() {
         try{
-
             const apartment = await fetch(`http://localhost:3000/apartments/${this.props.match.params.apartment_id}`);
             const data = await apartment.json();
             this.onSuccess(data);
@@ -34,7 +34,6 @@ class Apartment extends React.Component{
         }
         
         try{
-            console.log(this.props.match.params.apartment_id)
             const apartmentImages = await fetch(`http://localhost:3000/apartments/${this.props.match.params.apartment_id}/images`);
             const imagesData = await apartmentImages.json();
             this.handleSingleSuccess(imagesData);
@@ -57,8 +56,8 @@ class Apartment extends React.Component{
             loading: false
         })
     }
-    handleLike = () => {
 
+    handleLike = () => {
         const apartmentId = this.props.match.params.apartment_id;
         const userId = JSON.parse(Cookies.get('login')).id;
         if(!this.checkIfApartmentAlreadyExistsInWishList(apartmentId)){
@@ -67,7 +66,7 @@ class Apartment extends React.Component{
         
     }
 
-    checkIfApartmentAlreadyExistsInWishList=(appId)=>{
+    checkIfApartmentAlreadyExistsInWishList=(appId) => {
         console.log(this.state.wishList)
         for(let app in this.state.wishList.data){
             console.log('bla',this.state.wishList.data[app].id,appId)
@@ -79,13 +78,13 @@ class Apartment extends React.Component{
     }
     
     render(){
-        const {apartment, loading}=this.state;
-        const curCarouselImages=this.state.appImages.map((url,u)=>{return <Carousel.Item key={u}><img alt='/' style={{height:'550px',width:'100%'}} src={`${url}`}/></Carousel.Item>})
+        const {apartment, loading} = this.state;
+        const curCarouselImages = this.state.appImages.map((url,u)=>{return <Carousel.Item key={u}><img alt='/' style={{height:'550px',width:'100%'}} src={`${url}`}/></Carousel.Item>})
         return(
             loading ? <p>LOADING...</p> :
             <div>
-            <div className={'container position-relative'}>
-                <Carousel className={'position-relative'}>  
+            <div className = {'container position-relative'}>
+                <Carousel className = {'position-relative'}>  
                     {curCarouselImages}
                 </Carousel>
                 <div style={{position:'absolute',top:'90%'}} className={'d-flex'}>

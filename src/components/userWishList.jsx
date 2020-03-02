@@ -1,9 +1,12 @@
 import React from 'react';
 import Cookies from 'js-cookie';
+
 import BuildCard from '../components/build-card';
+
 import {getWishListApartments} from '../api/controllers/apartments';
 
 class UserWishList extends React.Component {
+
     constructor(){
         super();
         this.state = {
@@ -36,5 +39,4 @@ class UserWishList extends React.Component {
         );
     }
 }
-
 export default UserWishList;

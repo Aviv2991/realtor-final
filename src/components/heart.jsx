@@ -1,14 +1,18 @@
 import React from 'react';
+
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
 class Heart extends React.Component {
+
     render() {
         function renderTooltip(props) {
-            return <Tooltip {...props}>Add to Wish List</Tooltip>;
+            return <Tooltip show='true' {...props}>Add to Wish List</Tooltip>; 
           }
 
         return(
+            
             <OverlayTrigger
+            show='true'
             placement="right"
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip}

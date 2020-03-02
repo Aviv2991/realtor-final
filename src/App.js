@@ -1,5 +1,12 @@
 import React from 'react';
 import './styling/App.css';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+}from 'react-router-dom';
+
 import BuildApartmentsGallery from './components/apartmentsgallery';
 import BuildCitiesGallery from './components/citiesgallery';
 import Apartment from './components/singleapartment.jsx';
@@ -17,13 +24,8 @@ import RemovedApartments from './components/removedApartments';
 import Login from './components/login';
 import Register from './components/registration';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-}from 'react-router-dom';
-
 class App extends React.Component {
+
   render(){
     return (
       <div className="App">
@@ -68,7 +70,4 @@ class App extends React.Component {
     );    
   }
 }  
-
-
-
 export default App;
