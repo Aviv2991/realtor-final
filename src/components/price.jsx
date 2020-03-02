@@ -1,6 +1,7 @@
 import React from 'react';
 
 class Price extends React.Component {
+    
     render() {
         let curPrice = this.props.price/1000000
         return(

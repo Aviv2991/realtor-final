@@ -1,13 +1,16 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 import {Link} from 'react-router-dom';
+
 import AdminPage from './adminPage';
+
 import {ButtonGroup,Button} from 'react-bootstrap';
 
 class Profile extends React.Component {
+
     constructor(){
         super();
-        this.state={
+        this.state = {
             userId:JSON.parse(Cookies.get('login')).id
         }
     }
@@ -29,12 +32,8 @@ class Profile extends React.Component {
                             <Button><Link style={linkStyle} to='/my_apartments'>Show me my properties!</Link></Button>
                             <Button><Link style={linkStyle} to='/my_wish_list'>Show me the properties i liked!</Link></Button>
                         </ButtonGroup>
-                        
-                        
-                        
                     </div>
                 }
-                
             </div>
         );
     }

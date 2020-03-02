@@ -1,5 +1,7 @@
 import React from 'react';
+
 import {approveApartmentById} from '../api/controllers/apartments';
+
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
 class Recover extends React.Component{

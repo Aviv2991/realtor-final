@@ -1,20 +1,25 @@
 import React from 'react';
+
 import {getApartmentsByStatus} from '../api/controllers/apartments';
+
 import BuildCard from './build-card';
 
-class PendingApartments extends React.Component{
+class PendingApartments extends React.Component {
+
     constructor(){
         super();
-        this.state={
+        this.state = {
             pendingApartments:null
         }
     }
+
     async componentDidMount(){
         const apartments = await getApartmentsByStatus('pending')
         await this.setState({
             pendingApartments:apartments.data
         })
     }
+    
     render(){
         let curPendingApartments = this.state.pendingApartments && 
             this.state.pendingApartments.map((apartment,a)=>{

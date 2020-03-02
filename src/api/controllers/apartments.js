@@ -5,7 +5,7 @@ export async function getAllApartments(query = ''){
         const {data} = await fetcher.get(`/apartments?${query}`)
         return data;
     }catch(error) {
-      throw new Error(`Get aprtment failed with:${error.message}`)
+      throw new Error(`Get aprtments failed with:${error.message}`)
     }
   };
 
@@ -14,7 +14,7 @@ export async function getAllApartments(query = ''){
       const apartmentsData = await fetcher.get(`/apartments/users/${userId}`)
       return apartmentsData;
     }catch(error){
-      throw new Error(`Get apartments failed with: ${error.message}`);
+      throw new Error(`Get apartments by userId failed with: ${error.message}`);
     }
   }
 
@@ -34,7 +34,7 @@ export async function addNewApartment (obj) {
     });
     return response.data;
 }catch(error){
-    // throw new Error(`Cant login. ${error.message}`);
+    throw new Error(`Adding new apartments failed with: ${error.message}`);
   }
 }
 export async function addApartmentToWishList(wishListObj){

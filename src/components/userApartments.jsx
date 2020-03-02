@@ -1,10 +1,13 @@
 import React from 'react';
 import Cookies from 'js-cookie';
+
 import {getApartmentsByUserId} from '../api/controllers/apartments';
+
 import BuildCard from '../components/build-card';
 
 
 class UserApartments extends React.Component {
+    
     constructor(){
         super();
         this.state = {

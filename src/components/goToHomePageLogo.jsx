@@ -1,11 +1,14 @@
 import React from 'react';
+
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
-class GoToHomePage extends React.Component{
+class GoToHomePage extends React.Component {
+
     render(){
         function renderTooltip(props) {
-            return <Tooltip {...props}>Go to Home Page</Tooltip>;
+            return <Tooltip show='true' {...props}>Go to Home Page</Tooltip>;
           }
+          
         return(
             <OverlayTrigger
                 placement="right"

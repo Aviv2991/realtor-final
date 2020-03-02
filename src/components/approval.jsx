@@ -1,6 +1,9 @@
 import React from 'react';
-import {approveApartmentById} from '../api/controllers/apartments';
+
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
+
+import {approveApartmentById} from '../api/controllers/apartments';
+
 
 class Approve extends React.Component{
 
@@ -10,9 +13,8 @@ class Approve extends React.Component{
         await window.location.reload();
 
     }
-    render(){
-        
 
+    render(){
         function renderTooltip(props) {
             return <Tooltip {...props}>Approve Apartment</Tooltip>;
           }
@@ -26,7 +28,6 @@ class Approve extends React.Component{
                     <i class="fas fa-thumbs-up"></i> 
                 </div>
             </OverlayTrigger>
-
         )
     }
 }
