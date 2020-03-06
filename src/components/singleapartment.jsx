@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 import {Carousel} from 'react-bootstrap';
 
 import Heart from './heart.jsx';
+import Price from './price';
 
 import {addApartmentToWishList,getWishListApartments} from '../api/controllers/apartments';
 
@@ -79,6 +80,7 @@ class Apartment extends React.Component{
     
     render(){
         const {apartment, loading} = this.state;
+        console.log(apartment)
         const curCarouselImages = this.state.appImages.map((url,u)=>{return <Carousel.Item key={u}><img alt='/' style={{height:'550px',width:'100%'}} src={`${url}`}/></Carousel.Item>})
         return(
             loading ? <p>LOADING...</p> :
@@ -88,10 +90,9 @@ class Apartment extends React.Component{
                     {curCarouselImages}
                 </Carousel>
                 <div style={{position:'absolute',top:'90%'}} className={'d-flex'}>
-                    <div className={'bold text-white p-1 mx-2'} style={{backgroundColor:'green',fontSize:'12px'}}>10 Hours Ago</div>
                     <div className={'bold mx-2'} style={sqftWrapperStyle}>
-                        <span style={{color:"white"}}>{apartment.for_sale && "For Sale"}</span>
-                        <span style={{color:"white"}}>{apartment.for_rent && "For Rent"}</span>
+                        <span style={{color:"black",fontSize:'16px'}}>{apartment.sale_status==='sale' && "For Sale"}</span>
+                        <span style={{color:"black",fontSize:'16px'}}>{apartment.sale_status==='rent' && "For Rent"}</span>
                     </div>
                     <div className={'bold mx-2'} style={sqftWrapperStyle}>
                         <span style={{color:"white"}}>{this.state.appSqft} sqft</span>
@@ -102,7 +103,8 @@ class Apartment extends React.Component{
                 </div>
             </div>
             <div style={{borderBottom:'1px solid grey',width:'80%'}} className={'container mt-4'}>
-                <p className={'bold'} style={{fontSize:'30px'}}>{apartment.price/1000000} Million $</p>
+                <p className={'bold'} style={{fontSize:'30px'}}><Price price={apartment.price}/></p>
+                {/* <p className={'bold'} style={{fontSize:'30px'}}>{apartment.price/1000000} Million $</p> */}
                 <ul className={'d-flex'}>
                     <li style={{fontSize:'20px'}} className={'mr-3'}>{apartment.number_of_bath}<span className={'text-black-50 ml-1'}>bed</span></li>
                     <li style={{fontSize:'20px'}} className={'mr-3'}>{apartment.number_of_room}<span className={'text-black-50 ml-1'}>bath</span></li>

@@ -37,4 +37,4 @@ class PendingApartments extends React.Component {
         );
     }
 }
-export default PendingApartments;
+export default PendingApartments;  

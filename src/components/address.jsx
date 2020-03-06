@@ -4,7 +4,7 @@ class Address extends React.Component {
     render() {
         return(
             <div className = {'address'}>    
-                <span>
+                <span className='bold'>
                     {this.props.address}
                 </span>
             </div> 

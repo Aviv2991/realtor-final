@@ -45,13 +45,7 @@
 .heart:hover path{
   fill: rgba(255,106,0,.5);
 }
-.price{
-  position: absolute;
-  left: 5%;
-  bottom:5%;
-  color: white;
-  font-size: 25px;
-}
+
 .garbage{
   position: absolute;
   right: 10%;
@@ -78,6 +72,9 @@ ul{
 }
 .address{
   text-align: left;
+}
+.sale-status{
+  text-align: right;
 }
 .emailagent{
   font-size: 15px; 
