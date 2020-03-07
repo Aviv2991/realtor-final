@@ -5,6 +5,7 @@ import {Button} from 'react-bootstrap';
 import RentingInsidersGuide from './inside-guide.jsx';
 import NumericStats from './numericStats';
 import HomePageIcons from './homePageIcons';
+import GoToGallery from './goToGallery';
  
 class Home extends React.Component {
     constructor(props) {
@@ -51,13 +52,7 @@ class Home extends React.Component {
                         <li className = {'mx-2 bold'}><a style = {mainBackgroundLinksStyle} href='/apartments'>JUST SOLD</a></li>
                         <li className = {'mx-2 bold'}><a style = {mainBackgroundLinksStyle} href='/apartments'>HOME VALUE</a></li>
                     </ul>
-                    <form style = {{paddingBottom:'155px'}} action = "">
-                        <Link to = '/apartments'>
-                            <Button variant = "secondary" size = "lg">
-                                Show Me All Properties!
-                            </Button>
-                        </Link>
-                    </form>
+                    <GoToGallery/>
                 </div>
                 <h2 className = {'container mt-5'} style = {{fontSize:'1.75rem',textAlign:'left'}}>New listings in New York, NY</h2>
                 <a className = {'container d-flex flex-start mt-3'} style = {{fontSize:'15px'}} href = "/apartments">View All 629 New Listings</a>

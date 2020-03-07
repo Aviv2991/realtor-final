@@ -58,6 +58,7 @@ class Register extends React.Component{
             email:this.state.email.value,
             phone:this.state.phone.value,
             role_id:2}
+            console.log('b4 response');
             const response = await signup(values);
             if(response){
                 console.log('yesh response')

@@ -59,15 +59,13 @@ const maxSqft = [
     {value:100000,label:'10,000'},
 ];
   const propertyTypes = [
-      {value:'Family'},
-      {value:'Warehouse'},
-      {value:'Mobile'},
-      {value:'Farm'},
-      {value:'Land'},
-      {value:'Condo'},
-      {value:'Coop'},
-      {value:'Townhome'},
-      {value:'Igloos'},
+      {value:'house'},
+      {value:'ranch'},
+      {value:'condo'},
+      {value:'land'},
+      {value:'multi_family'},
+      {value:'coop'},
+      {value:'tomnhome'},
   ]; 
   module.exports = {
     minPriceValues,

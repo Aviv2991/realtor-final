@@ -73,14 +73,14 @@ class Login extends React.Component {
                 <form onSubmit={this.onSubmit}>
                     <div className="row form-group">
                         <div className="col-md-4 offset-md-1">
-                            <label htmlFor="exampleInputEmail1">Username</label>
-                            <input type="text" name="username" className="form-control" placeholder="Enter Username"
+                            <label htmlFor="exampleInputEmail1">Email</label>
+                            <input type="text" name="username" className="form-control" placeholder="Enter Email Address"
                                 onBlur={this.inputChange}
                                 ></input>
                                 <InputErrors errors={this.state.username.errors}></InputErrors>
                         </div>
                         <div className="col-md-4 offset-md-2">
-                            <label htmlFor="exampleInputEmail1">Email</label>
+                            <label htmlFor="exampleInputEmail1">Passowrd</label>
                             <input type="password" name="password" className="form-control" placeholder="Enter Password"
                                 onBlur={this.inputChange}
                             ></input>

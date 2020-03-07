@@ -1,7 +1,8 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 
-import BuildCard from '../components/build-card';
+import BuildCard from './build-card';
+import GoToGallery from './goToGallery';
 
 import {getWishListApartments} from '../api/controllers/apartments';
 
@@ -30,6 +31,7 @@ class UserWishList extends React.Component {
         return (
             <div>
                 <h1 className='styledh1'>My Wish List</h1>
+                <GoToGallery/>
                 <div className='container'>
                     <div className={'row'}>
                         {curApartments}
