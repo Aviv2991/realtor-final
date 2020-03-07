@@ -104,6 +104,11 @@ class NewApartmentForm extends React.Component {
             formData.set('status', 'pending'); 
 
             const response = await addNewApartment(formData);
+            console.log(response);
+            
+            if(response){
+                window.location.assign('http://localhost:3002/my_apartments');
+            }
         }    
     } 
     onCountrySelected = async (event) => {

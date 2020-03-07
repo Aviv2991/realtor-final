@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 import {Link} from 'react-router-dom';
 
 import AdminPage from './adminPage';
+import GoToGallery from './goToGallery';
 
 import {ButtonGroup,Button} from 'react-bootstrap';
 
@@ -27,6 +28,7 @@ class Profile extends React.Component {
                     :
                     <div className="d-flex flex-column">
                         <h2 className='styledh1'>Hello {name} !</h2>
+                        <GoToGallery/>
                         <ButtonGroup size="lg">
                             <Button><Link style={linkStyle} to='/new_apartment'>Add New Apartment</Link></Button>
                             <Button><Link style={linkStyle} to='/my_apartments'>Show me my properties!</Link></Button>

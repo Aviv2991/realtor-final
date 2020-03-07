@@ -35,6 +35,7 @@ class BuildApartmentsGallery extends React.Component{
         const value = event.target.value;
         const curObj = this.state.filterObj;
         curObj[name] = value;
+        console.log(curObj)
         this.setState({
             filterObj:curObj,
         },() => this.getApartments(this.queryBuild(this.state.filterObj)));
@@ -49,7 +50,7 @@ class BuildApartmentsGallery extends React.Component{
       async setApartmentsLength () {
           try {
             const curObj = this.state.filterObj;
-            curObj['size'] = 1000;
+            curObj['size'] = 20;
             const query = this.queryBuild(curObj)
             const apartments = await getAllApartments(query);
             await this.setState({
@@ -178,7 +179,7 @@ class BuildApartmentsGallery extends React.Component{
                         {this.state.filterObj.country  && 
                             <Form.Group controlId = "cities">
                                 <Form.Control name = 'city' onChange = {this.handleSearch} as = "select" style = {{width:'125px'}}>
-                                    <option>Select City</option>
+                                    <option value=''>Select City</option>
                                         {this.state.cities && this.state.cities.map((city,y) => (
                                             <option key = {y} value = {city.id}>
                                                 {city.name}
@@ -186,7 +187,7 @@ class BuildApartmentsGallery extends React.Component{
                                   ))}
                                 </Form.Control>
                             </Form.Group>}                                
-                          <Form.Group controlId = "minPriceSelect">
+                          {/* <Form.Group controlId = "minPriceSelect">
                               <Form.Control name = 'minPrice' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Min Price</option>
                                   {minPriceValues.map((val,v) => (
@@ -195,20 +196,27 @@ class BuildApartmentsGallery extends React.Component{
                                       </option>
                                   ))}
                                </Form.Control>
-                           </Form.Group>
-                           <Form.Group controlId = "maxPriceSelect">
+                           </Form.Group> */}
+                           <Form.Group controlId="minPriceSelect">
+                              <Form.Control name='minPrice' onChange={this.handleSearch} type="number" placeholder="enter min price" style={{width:'fit-content'}}/>
+                            </Form.Group>
+                           {/* <Form.Group controlId = "maxPriceSelect">
                               <Form.Control name = 'maxPrice' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
-                                  <option>Max Price</option>
-                                  {maxPriceValues.map((val,v) => (
+                                  <option><Form.Control name = 'maxPrice' onChange={this.handleSearch} type="number" placeholder="enter max price" /></option>
+                                  <option><input onChange={this.handleSearch} type="number"/></option>
+                                  {maxPriceValues.map((val,v) => ( 
                                       <option key = {v} value = {val.value}>
                                           {val.title}
                                       </option>
                                   ))}
                                </Form.Control>
-                           </Form.Group>
+                           </Form.Group> */}
+                           <Form.Group controlId="maxPriceSelect">
+                              <Form.Control name='maxPrice' onChange={this.handleSearch} type="number" placeholder="enter max price" style={{width:'fit-content'}}/>
+                            </Form.Group>
                            <Form.Group controlId = "propertyType">
                               <Form.Control name = 'propertyType' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
-                                  <option>Property Type</option>
+                                  <option value=''>Property Type</option>
                                   {propertyTypes.map((prop,t) => (
                                       <option key = {t} value = {prop.value}>
                                           {prop.value}
@@ -216,7 +224,7 @@ class BuildApartmentsGallery extends React.Component{
                                   ))}
                                </Form.Control>
                            </Form.Group>
-                           <Form.Group controlId = "minNumberOfBaths">
+                           {/* <Form.Group controlId = "minNumberOfBaths">
                               <Form.Control name = 'minNumberOfBaths' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Min Baths</option>
                                   {minNumberOfBaths.map((bath,b) => (
@@ -225,8 +233,11 @@ class BuildApartmentsGallery extends React.Component{
                                       </option> 
                                   ))}
                                </Form.Control>
-                           </Form.Group>
-                           <Form.Group controlId = "maxNumberOfBaths">
+                           </Form.Group> */}
+                           <Form.Group controlId="minNumberOfBaths">
+                              <Form.Control name='minNumberOfBaths' onChange={this.handleSearch} type="number" placeholder="enter min baths" style={{width:'fit-content'}}/>
+                            </Form.Group>
+                           {/* <Form.Group controlId = "maxNumberOfBaths">
                               <Form.Control name = 'maxNumberOfBaths' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Max Baths</option>
                                   {maxNumberOfBaths.map((bath,b) => (
@@ -235,8 +246,11 @@ class BuildApartmentsGallery extends React.Component{
                                       </option> 
                                   ))}
                                </Form.Control>
-                           </Form.Group>
-                           <Form.Group controlId = "minNumberOfRooms">
+                           </Form.Group> */}
+                           <Form.Group controlId="maxNumberOfBaths">
+                              <Form.Control name='maxNumberOfBaths' onChange={this.handleSearch} type="number" placeholder="enter max baths" style={{width:'fit-content'}}/>
+                            </Form.Group>
+                           {/* <Form.Group controlId = "minNumberOfRooms">
                               <Form.Control name = 'minNumberOfRooms' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Min Rooms</option>
                                   {minNumberOfRooms.map((room,r) => (
@@ -245,8 +259,11 @@ class BuildApartmentsGallery extends React.Component{
                                       </option> 
                                   ))}
                                </Form.Control>
-                           </Form.Group>
-                           <Form.Group controlId = "maxNumberOfRooms">
+                           </Form.Group> */}
+                           <Form.Group controlId="minNumberOfRooms">
+                              <Form.Control name='minNumberOfRooms' onChange={this.handleSearch} type="number" placeholder="enter min rooms" style={{width:'fit-content'}}/>
+                            </Form.Group>
+                           {/* <Form.Group controlId = "maxNumberOfRooms">
                               <Form.Control name = 'maxNumberOfRooms' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Max Rooms</option>
                                   {maxNumberOfRooms.map((room,r) => (
@@ -255,8 +272,11 @@ class BuildApartmentsGallery extends React.Component{
                                       </option> 
                                   ))}
                                </Form.Control>
-                           </Form.Group>
-                           <Form.Group controlId = "minSqft">
+                           </Form.Group> */}
+                           <Form.Group controlId="maxNumberOfRooms">
+                              <Form.Control name='maxNumberOfRooms' onChange={this.handleSearch} type="number" placeholder="enter max rooms" style={{width:'fit-content'}}/>
+                            </Form.Group>
+                           {/* <Form.Group controlId = "minSqft">
                               <Form.Control name = 'minSqft' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Min Sqft</option>
                                   {minSqft.map((square,s) => (
@@ -265,8 +285,11 @@ class BuildApartmentsGallery extends React.Component{
                                       </option> 
                                   ))}
                                </Form.Control>
-                           </Form.Group>
-                           <Form.Group controlId = "maxSqft">
+                           </Form.Group> */}
+                           <Form.Group controlId="minSqft">
+                              <Form.Control name='minSqft' onChange={this.handleSearch} type="number" placeholder="enter min sqft" style={{width:'fit-content'}}/>
+                            </Form.Group>
+                           {/* <Form.Group controlId = "maxSqft">
                               <Form.Control name = 'maxSqft' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
                                   <option>Max Sqft</option>
                                   {maxSqft.map((square,u) => (
@@ -275,7 +298,10 @@ class BuildApartmentsGallery extends React.Component{
                                       </option> 
                                   ))}
                                </Form.Control>
-                           </Form.Group>
+                           </Form.Group> */}
+                           <Form.Group controlId="maxSqft">
+                              <Form.Control name='maxSqft' onChange={this.handleSearch} type="number" placeholder="enter max sqft" style={{width:'fit-content'}}/>
+                            </Form.Group>
                       </Form.Row>
                   </Form>
                 <div className = {'container-fluid'}>

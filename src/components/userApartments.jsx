@@ -3,7 +3,8 @@ import Cookies from 'js-cookie';
 
 import {getApartmentsByUserId} from '../api/controllers/apartments';
 
-import BuildCard from '../components/build-card';
+import BuildCard from './build-card';
+import GoToGallery from './goToGallery';
 
 
 class UserApartments extends React.Component {
@@ -30,6 +31,7 @@ class UserApartments extends React.Component {
         return (
             <div>
                 <h1 className='styledh1'>My Properties</h1>
+                <GoToGallery/>
                 <div className={'container'}>
                     <div className={'row'}>
                         {curApartments}

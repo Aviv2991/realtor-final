@@ -8,7 +8,6 @@ import {
 }from 'react-router-dom';
 
 import BuildApartmentsGallery from './components/apartmentsgallery';
-import BuildCitiesGallery from './components/citiesgallery';
 import Apartment from './components/singleapartment.jsx';
 import BuildNavigation from './components/buildnavigation.jsx';
 import Home from './components/home.jsx';
@@ -35,7 +34,6 @@ class App extends React.Component {
             <Switch>
                 <Route path='/apartments' component={BuildApartmentsGallery}/>
 
-                <Route path='/cities' component={BuildCitiesGallery}/>
 
                 <Route path='/apartment/:apartment_id' component={Apartment}/>
 
