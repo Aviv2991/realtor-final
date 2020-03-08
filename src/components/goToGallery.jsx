@@ -6,7 +6,7 @@ import {Button} from 'react-bootstrap';
 class GoToGallery extends React.Component{
     render(){
         return(
-            <form style = {{paddingBottom:'155px'}} action = "">
+            <form style = {{paddingBottom:'25px'}} action = "">
                 <Link to = '/apartments'>
                     <Button variant = "secondary" size = "lg">
                         Show Me All Properties!
@@ -16,4 +16,4 @@ class GoToGallery extends React.Component{
         );
     }
 }
-export default GoToGallery;
+export default GoToGallery; 

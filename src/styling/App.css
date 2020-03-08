@@ -335,6 +335,13 @@ ul{
                         text-shadow: 0px 1px 1px #4d4d4d;
                         color: #222;
                         font: 80px 'LeagueGothicRegular';
-                        margin: 5% 0;
+                        margin: 3% 0;
+                        text-align: center;
+                      }
+                      .styledh3 {
+                        text-shadow: 0px 1px 1px #4d4d4d;
+                        color: #222;
+                        font: 24px 'LeagueGothicRegular';
+                        margin: 3% 0;
                         text-align: center;
                       }
