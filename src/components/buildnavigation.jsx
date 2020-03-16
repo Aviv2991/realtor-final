@@ -54,7 +54,7 @@ class BuildNavigation extends React.Component {
         await this.setState({
             activeUser:null
         })
-        await window.location.assign('http://localhost:3002/')
+        await window.location.assign('http://localhost:3001/')
     }
 
     componentDidMount () {

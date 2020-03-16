@@ -107,7 +107,7 @@ class NewApartmentForm extends React.Component {
             console.log(response);
             
             if(response){
-                window.location.assign('http://localhost:3002/my_apartments');
+                window.location.assign('http://localhost:3001/my_apartments');
             }
         }    
     } 

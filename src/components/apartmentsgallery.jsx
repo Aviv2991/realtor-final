@@ -35,7 +35,6 @@ class BuildApartmentsGallery extends React.Component{
         const value = event.target.value;
         const curObj = this.state.filterObj;
         curObj[name] = value;
-        console.log(curObj)
         this.setState({
             filterObj:curObj,
         },() => this.getApartments(this.queryBuild(this.state.filterObj)));
@@ -65,8 +64,7 @@ class BuildApartmentsGallery extends React.Component{
          try{
             const apartments = await getAllApartments(query);
             this.setState({
-              apartments,
-              toFilterArr:apartments
+              apartments:apartments
             });
         }catch(error) {
           throw new Error(`get aaprtment failed with:${error.message}`)
@@ -156,8 +154,15 @@ class BuildApartmentsGallery extends React.Component{
             return;
         }
       }
+      handleSwitch=async(e)=>{
+        e.preventDefault();
+        console.log('event',e.target.name,e.target.value)
+      }
 
       render(){
+          console.log(this.state.apartments.apartments);
+          console.log('this.state',this.state);
+          
           let firstapps = this.state.apartments.apartments ?
                         Object.values(this.state.apartments)[0].map((mapping,m ) =>
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
@@ -197,6 +202,33 @@ class BuildApartmentsGallery extends React.Component{
                                   ))}
                                </Form.Control>
                            </Form.Group> */}
+                           {/* <Form.Group controlId = "sale_status">
+                              <Form.Control placeholder='Buy/Rent' name = 'sale_status' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
+                                  <option value='sale'>Buy</option>
+                                  <option value="rent">Rent</option>
+                               </Form.Control>
+                           </Form.Group> */}
+                            <Form.Check 
+                                type="switch"
+                                id="buy-switch"
+                                label="Buy"
+                                name='sale_status'
+                                defaultValue=''
+                                onChange={(e)=>{
+                                    e.target.value = e.target.checked ? 'sale': ''; 
+                                    this.handleSearch(e);
+                                }}
+                            />
+                            <Form.Check
+                                name='sale_status'
+                                type="switch"
+                                label="Rent"
+                                id="rent-switch"
+                                onChange={(e)=>{
+                                    e.target.value = e.target.checked ? 'rent': '';
+                                    this.handleSearch(e);
+                                }}
+                            />
                            <Form.Group controlId="minPriceSelect">
                               <Form.Control name='minPrice' onChange={this.handleSearch} type="number" placeholder="enter min price" style={{width:'fit-content'}}/>
                             </Form.Group>
@@ -212,7 +244,7 @@ class BuildApartmentsGallery extends React.Component{
                                </Form.Control>
                            </Form.Group> */}
                            <Form.Group controlId="maxPriceSelect">
-                              <Form.Control name='maxPrice' onChange={this.handleSearch} type="number" placeholder="enter max price" style={{width:'fit-content'}}/>
+                              <Form.Control defaultValue='0' name='maxPrice' onChange={this.handleSearch} type="number" placeholder="enter max price" style={{width:'fit-content'}}/>
                             </Form.Group>
                            <Form.Group controlId = "propertyType">
                               <Form.Control name = 'propertyType' onChange = {this.handleSearch} as = "select" style = {{width:'fit-content'}}>
@@ -307,7 +339,6 @@ class BuildApartmentsGallery extends React.Component{
                 <div className = {'container-fluid'}>
                     <div className = {'row'}>   
                         {firstapps}
-                          
                     </div>
                 </div>
                     <nav aria-label="Page navigation example">

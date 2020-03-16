@@ -14,26 +14,15 @@ class Home extends React.Component {
             fourApartmentsForHomePage : []
         }
     }
-    handleFourAppsSucces = ({apartments}) => {
-        let tempArr = [];
-        for(var i = 0; i < 4; i++ ){
-            let tempApartment = apartments[Math.floor(Math.random()*apartments.length)];
-            if(!tempArr.includes(tempApartment)){
-                tempArr.push(tempApartment);
-            }
-            else{
-                i-- 
-            }
-        }
-        this.setState({
-            fourApartmentsForHomePage : tempArr,
-        })
-    }
+
     async componentDidMount() {
         try {
             const apartments = await fetch(`http://localhost:3000/apartments/`);
             const apartmentsData = await apartments.json();
-            this.handleFourAppsSucces(apartmentsData);
+            console.log(apartmentsData)
+            await this.setState({
+                fourApartmentsForHomePage : apartmentsData.apartments.slice(0, 4),
+            });
         }catch(error) {
             throw new Error(`failed to load apartments with: ${error.message}`);
         }
