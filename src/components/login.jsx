@@ -55,7 +55,7 @@ class Login extends React.Component {
             console.log(result);
             const response = await login(this.state.username.value, this.state.password.value);
             if(response){
-                window.location.assign('http://localhost:3002/user_profile');
+                window.location.assign('http://localhost:3001/user_profile');
             }
             console.log(Cookies.get('login'));
         }

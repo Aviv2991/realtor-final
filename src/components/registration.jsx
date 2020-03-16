@@ -35,7 +35,6 @@ class Register extends React.Component{
             const errors = validate(prop, field.value, field.validations);
             console.log(errors);
             if(errors.length){
-                console.log('im in')
                 isOK = false;
                 this.setState({
                     [prop]: {
@@ -51,18 +50,15 @@ class Register extends React.Component{
                 result[prop] = this.state[prop].value;
             }
             //Send the data somewhere
-            console.log('signup result',result);
             const values={first_name:this.state.first_name.value,
             last_name:this.state.last_name.value,
             password:this.state.password.value,
             email:this.state.email.value,
             phone:this.state.phone.value,
             role_id:2}
-            console.log('b4 response');
             const response = await signup(values);
             if(response){
-                console.log('yesh response')
-                window.location.assign('http://localhost:3002/');
+                window.location.assign('http://localhost:3001/login_page');
             }
             console.log(Cookies.get('login'));
         }

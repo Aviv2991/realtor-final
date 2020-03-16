@@ -11,6 +11,9 @@ import Recover from './recover';
 import SaleStatus from './saleStatus';
 
 class BuildCard extends React.Component {
+    saleStatusToUppercase=(saleStatus)=>{
+        return saleStatus.charAt(0).toUpperCase() + saleStatus.slice(1)
+    }
     render() {
         const {id,price,number_of_bath,number_of_room,label,name,country,sale_status} = this.props;
         const mainImageUrl = `url('http://localhost:3000/${this.props.main_image}')`;
@@ -23,20 +26,20 @@ class BuildCard extends React.Component {
                         </div>
                     </div>
                     <ul style = {{listStyle:'none'}} className = {"text-wrapper d-flex justify-content-between"}>
-                        {this.props.number_of_bath?<li><span className = {'bold'}>{number_of_bath}</span> beds</li>:<li>{country}</li>}
-                        {this.props.number_of_room?<li><span className = {'bold'}>{number_of_room}</span> baths</li>:<li>{name}</li>}
+                        {this.props.number_of_bath?<li><span className = {'bold'}>{number_of_bath}</span> baths</li>:<li>{country}</li>}
+                        {this.props.number_of_room?<li><span className = {'bold'}>{number_of_room}</span> beds</li>:<li>{name}</li>}
                         {this.props.sqft?<li><span className = {'bold'}>{this.props.sqft}</span> sqft</li>:<li>{label}</li>}
                     </ul>
                     <div style={{display:'flex',justifyContent:'space-around'}}>
                         <Address address = {this.props.address}/>
-                        <SaleStatus sale_status={this.props.sale_status}/>
+                        <p className='sale-status bold'>For {this.saleStatusToUppercase(sale_status)}</p>
                     </div>
                 </Link>
-                {window.location.href==='http://localhost:3002/my_apartments' && <Garbage id={id}  className='garbage'/>}
-                {window.location.href==='http://localhost:3002/approved_apartments' && <Garbage id={id}  className='garbage'/>}
-                {window.location.href==='http://localhost:3002/pending_apartments' && <Approval id={id} className='approval'/>}
-                {window.location.href==='http://localhost:3002/pending_apartments' && <Deny id={id} className='deny'/>}
-                {window.location.href==='http://localhost:3002/removed_apartments' && <Recover id={id} className='recover'/>}
+                {window.location.href==='http://localhost:3001/my_apartments' && <Garbage id={id}  className='garbage'/>}
+                {window.location.href==='http://localhost:3001/approved_apartments' && <Garbage id={id}  className='garbage'/>}
+                {window.location.href==='http://localhost:3001/pending_apartments' && <Approval id={id} className='approval'/>}
+                {window.location.href==='http://localhost:3001/pending_apartments' && <Deny id={id} className='deny'/>}
+                {window.location.href==='http://localhost:3001/removed_apartments' && <Recover id={id} className='recover'/>}
             </div>
         );
     }
