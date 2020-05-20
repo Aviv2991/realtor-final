@@ -2,7 +2,7 @@ import React from 'react';
 import Cookies from 'js-cookie';
 
 import {navProps} from '../nav.js';
-import {Navbar,Nav,Fade,Dropdown} from 'react-bootstrap';
+import {Navbar,Nav,Fade,Dropdown,Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 import GoToHomePage from './goToHomePageLogo';
@@ -72,34 +72,16 @@ class BuildNavigation extends React.Component {
                 <Navbar.Brand href = "/"><GoToHomePage/></Navbar.Brand>
                 <Navbar.Toggle variant = "dark" bg = "dark" aria-controls = "responsive-navbar-nav" />
                 <Navbar.Collapse style={{backgroundColor:'#343a40',display:'flex'}} id = "responsive-navbar-nav">
-                    <Nav style={{width:'100%',zIndex:'999'}} className='d-flex flex-row justify-content-around'>
-                        {navProps.map((data,i) => {
-                            return(
-                                <Nav.Link key = {i} onMouseOver = {() => this.active(i)} onMouseOut = {() => this.active(-1)}>
-                                    <h1 style={{fontSize:"14px"}}>{data.label}</h1>
-                                    <Fade in = {this.state.active === i} unmountOnExit = {true} style = {fadeStyle}>
-                                        <ul>
-                                            {
-                                                data.innerMenu.map((lis,i) => {
-                                                    return(
-                                                        <li key = {i} style = {{width:"100%"}}>
-                                                            {lis.slice(1).map((item,i) => {
-                                                                return (
-                                                                    <div key = {i}>
-                                                                        <h5 className = {'h5gradient'}>{lis[i].headtitle}</h5>
-                                                                        <Link to='/apartments' style = {{fontSize:'14px',color:'white',textDecoration:'none'}} key = {i}>{item.title}</Link>
-                                                                    </div>
-                                                                )
-                                                            })}
-                                                        </li>
-                                                    );
-                                                })
-                                            }
-                                        </ul>
-                                    </Fade>
-                                </Nav.Link>
-                            );
-                        })}
+                    {this.state.activeUser && 
+                    <div style={{display:'flex',width:'100%',justifyContent:'space-around'}}>
+                        <Link to='/apartments'><Button variant="secondary">Buy</Button></Link>
+                        <Link to='/apartments'><Button variant="secondary">Rent</Button></Link>
+                        <Link to='/new_apartment'><Button variant="secondary">Sell</Button></Link>
+                    </div>
+                    }
+                    <Nav style={{width:'100%',zIndex:'999'}} className='d-flex justify-content-end'>
+                        
+                       
                         {this.state.activeUser ?
                             <Dropdown style={{marginTop:'5px'}}>
                                 <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
@@ -133,3 +115,32 @@ export default BuildNavigation;
 
 const fadeStyle={display:"flex",position:"absolute",background: 'linear-gradient(74deg, rgba(102,107,154,1) 0%, rgba(93,100,103,1) 0%, rgba(41,29,29,1) 100%)',zIndex:"999",left:"0",width:'100%',top:'50px',transition:'1s'};
 const upperLinksStyle={margin:'0 5px',textDecoration:'none',color:'rgba(255,255,255,.5)'}
+
+
+ {/* {navProps.map((data,i) => {
+                            return(
+                                <Nav.Link key = {i} onMouseOver = {() => this.active(i)} onMouseOut = {() => this.active(-1)}>
+                                    <h1 style={{fontSize:"14px"}}>{data.label}</h1>
+                                    <Fade in = {this.state.active === i} unmountOnExit = {true} style = {fadeStyle}>
+                                        <ul>
+                                            {
+                                                data.innerMenu.map((lis,i) => {
+                                                    return(
+                                                        <li key = {i} style = {{width:"100%"}}>
+                                                            {lis.slice(1).map((item,i) => {
+                                                                return (
+                                                                    <div key = {i}>
+                                                                        {/* <h5 className = {'h5gradient'}>{lis[i].headtitle}</h5> */}
+                                                                        {/* <Link to='/apartments' style = {{fontSize:'14px',color:'white',textDecoration:'none'}} key = {i}>{item.title}</Link> */}
+                                                                    {/* </div>
+                                                                )
+                                                            })}
+                                                        </li>
+                                                    );
+                                                })
+                                            }
+                                        </ul>
+                                    </Fade>
+                                </Nav.Link>
+                            );
+                        })} */} 

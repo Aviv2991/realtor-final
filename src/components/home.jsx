@@ -19,7 +19,6 @@ class Home extends React.Component {
         try {
             const apartments = await fetch(`http://localhost:3000/apartments/`);
             const apartmentsData = await apartments.json();
-            console.log(apartmentsData)
             await this.setState({
                 fourApartmentsForHomePage : apartmentsData.apartments.slice(0, 4),
             });
