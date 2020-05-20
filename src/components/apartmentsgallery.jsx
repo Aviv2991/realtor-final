@@ -26,7 +26,7 @@ class BuildApartmentsGallery extends React.Component{
           filterObj:{},
           countries:[],
           firstPage:1,
-          apartmentsLength:null
+          apartmentsLength:null 
         }
       }
 
@@ -43,7 +43,7 @@ class BuildApartmentsGallery extends React.Component{
       async componentDidMount () {
           this.getApartments();
           this.getCountries();
-          this.setApartmentsLength();
+        //   this.setApartmentsLength();
       }
 
       async setApartmentsLength () {
@@ -63,6 +63,7 @@ class BuildApartmentsGallery extends React.Component{
      async getApartments(query = ''){
          try{
             const apartments = await getAllApartments(query);
+            console.log(query)
             this.setState({
               apartments:apartments
             });
@@ -75,6 +76,7 @@ class BuildApartmentsGallery extends React.Component{
         try {
             const countries = await fetch(`http://localhost:3000/countries`)
             let data = await countries.json();
+            console.log(data)
             this.setState({
                 countries:data,
             })
@@ -156,13 +158,10 @@ class BuildApartmentsGallery extends React.Component{
       }
       handleSwitch=async(e)=>{
         e.preventDefault();
-        console.log('event',e.target.name,e.target.value)
       }
 
       render(){
-          console.log(this.state.apartments.apartments);
-          console.log('this.state',this.state);
-          
+          console.log(this.state)
           let firstapps = this.state.apartments.apartments ?
                         Object.values(this.state.apartments)[0].map((mapping,m ) =>
                         {return <BuildCard {...mapping} key = {m}/>}) : ''
@@ -214,6 +213,7 @@ class BuildApartmentsGallery extends React.Component{
                                 label="Buy"
                                 name='sale_status'
                                 defaultValue=''
+                                disabled = {this.state.filterObj.sale_status == 'rent' && true }
                                 onChange={(e)=>{
                                     e.target.value = e.target.checked ? 'sale': ''; 
                                     this.handleSearch(e);
@@ -224,6 +224,7 @@ class BuildApartmentsGallery extends React.Component{
                                 type="switch"
                                 label="Rent"
                                 id="rent-switch"
+                                disabled = {this.state.filterObj.sale_status == 'sale' && true }
                                 onChange={(e)=>{
                                     e.target.value = e.target.checked ? 'rent': '';
                                     this.handleSearch(e);
