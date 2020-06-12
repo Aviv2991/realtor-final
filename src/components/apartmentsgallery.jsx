@@ -35,6 +35,21 @@ class BuildApartmentsGallery extends React.Component{
         const value = event.target.value;
         const curObj = this.state.filterObj;
         curObj[name] = value;
+        if( value === 'Select Country' ){
+            delete curObj[name]
+        }
+        if(name === 'maxPrice' && value === 0){
+            delete curObj[name] 
+        }
+        if( name === 'maxNumberOfBaths' && value <= 0 ){
+            delete curObj[name] 
+        }
+        if( name === 'maxNumberOfRooms' && value <= 0 ){
+            delete curObj[name]
+        }
+        if( name === 'maxSqft' && value <= 0 ){
+            delete curObj[name]
+        }
         this.setState({
             filterObj:curObj,
         },() => this.getApartments(this.queryBuild(this.state.filterObj)));
@@ -63,7 +78,6 @@ class BuildApartmentsGallery extends React.Component{
      async getApartments(query = ''){
          try{
             const apartments = await getAllApartments(query);
-            console.log(query)
             this.setState({
               apartments:apartments
             });

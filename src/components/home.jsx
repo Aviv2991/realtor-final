@@ -34,7 +34,7 @@ class Home extends React.Component {
                 <div style = {mainImgDivStyle} className = {'d-block'}>
                     <p style = {homeSearchParagraph}>The Home of Home Search℠</p>
                     <p style = {{fontSize:'20px',color:'white'}}>With the most complete source of homes for sale & real estate near you</p>
-                    <ul id='mainimagelist' className={'d-flex justify-content-center'}>
+                    <ul style={{margin:'50px 0'}} id='mainimagelist' className={'d-flex justify-content-center'}>
                         <li className = {'mx-2 bold'}><a style = {mainBackgroundLinksStyle} href='/apartments'>BUY</a></li>
                         <li className = {'mx-2 bold'}><a style = {mainBackgroundLinksStyle} href='/apartments'>RENT</a></li>
                         <li className = {'mx-2 bold'}><a style = {mainBackgroundLinksStyle} href='/apartments'>JUST SOLD</a></li>
@@ -42,8 +42,8 @@ class Home extends React.Component {
                     </ul>
                     <GoToGallery/>
                 </div>
-                <h2 className = {'container mt-5'} style = {{fontSize:'1.75rem',textAlign:'left'}}>New listings in New York, NY</h2>
-                <a className = {'container d-flex flex-start mt-3'} style = {{fontSize:'15px'}} href = "/apartments">View All 629 New Listings</a>
+                <h2 className = {'container mt-5'} style = {{fontSize:'1.75rem',textAlign:'left'}}>Most recent properties on Realtor</h2>
+                <a className = {'container d-flex flex-start mt-3'} style = {{fontSize:'15px'}} href = "/apartments">View All Apartments</a>
                 <div className = {'container d-flex mt-4'}>
                     {curFourCards}
                 </div>
@@ -66,7 +66,7 @@ class Home extends React.Component {
 export default Home;
 
 //STYLING
-const mainImgDivStyle = {backgroundImage:'url(https://static.rdc.moveaws.com/images/hero/veteran_united_prod/hp-takeover-desktop.jpg)',backgroundSize:'cover',backgroundRepeat:'no-repeat'};
+const mainImgDivStyle = {backgroundImage:'url(https://static.rdc.moveaws.com/images/hero/veteran_united_prod/hp-takeover-desktop.jpg)',backgroundSize:'cover',backgroundRepeat:'no-repeat',height:'570px'};
 const homeSearchParagraph = {fontSize:'56px',color:'white',paddingTop:'100px'};
 const h3Style = {color:'#757575',fontSize:'15px',textAlign:'left'};
 const mainBackgroundLinksStyle = {textDecoration:'none',color:'white',fontSize:'14px'};
