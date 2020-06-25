@@ -1,11 +1,9 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,141 +14,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #09d3ac;
 }
 .bold{
   font-weight: bold;
 }
-.rectangle{
-  background: green;
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  width: 135px;
-  height: 20px;
-  color: white;
-  font-size:12px;
-}
-.heart{
-  position: absolute;
-}
-
 .stickToTopAndRight{
   right: 5%;
   top: 5%;
-}
-
-.heart:hover path{
-  fill: rgba(255,106,0,.5);
-}
-
-.garbage{
-  position: absolute;
-  left: 10%;
-  bottom: 30%;
-  cursor: pointer;
-  font-size: 20px;
-  color: black;
-
-}
-.approval{
-  position: absolute;
-  bottom: 30%;
-  left: 5%;
-  cursor: pointer;
-  font-size: 20px;
-  color: black;
-
-}
-.deny{
-  position: absolute;
-  bottom: 29%;
-  left: 15%;
-  cursor: pointer;
-  font-size: 20px;
-  color: black;
-}
-.recover{
-  position: absolute;
-  bottom: 30%;
-  left: 10%;
-  cursor: pointer;
-  font-size: 20px;
-  color: black;
 }
 ul{
   padding-left: 0;
   list-style: none;
 }
-.address{
-  text-align: left;
-}
-.sale-status{
-  text-align: right;
-}
-.emailagent{
-  font-size: 15px; 
-}
 
-.card-wrapper:hover{
-  box-shadow:0 0 8px rgba(0,0,0,.5);
-}
-
-.emailagentBtn {
-  position: absolute;
-  right: 5%;
-  bottom:2%;
-  background: white;
-  border: 1px solid blue;
-  border-radius: 15px;
-  padding:5px;
-  transition: .5s;
-}
-.emailagentBtn:hover{
-  border: 1px solid white;
-}
- .card-wrapper{
-  position: relative;
-  margin-bottom: 50px;
-  
-}
-
-.menuItem .innerMenu {
-  display: none;
-}
-
-.menuItem:hover .innerMenu {
-  display: flex;
-  background-color: white;
-  position: absolute;
-  z-index: 50;
-  top: 30px;
-  left: 0;
-
-}
-.menuItem{
-  font-size:18px;
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-  color: black;
-
-
-  
-}
-.menuItem:hover{
-  border-bottom: 2px solid red;
-  text-decoration: none;
-  
-}
-#agenthover:hover{
-  background: wheat;
-  color: black;
-}
-.btnhover:hover{
-  background: black;
-}
 #mainimagelist >li{
   border-bottom: 2px solid transparent;
 }
@@ -169,193 +47,30 @@ ul{
   opacity: 0.5;
 }
 
-.h5gradient{
- 
-    background: -webkit-linear-gradient(white,green);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-}
-@media(max-width: 800px){
-	.divided-text1{
-		position: absolute;
-		left: 15px;
-    top:35%;
-    color: lightgray;
-	}
-	
-	.divided-text2{
-		position:absolute;
-		left:15px;
-		top: 35%;
-    z-index: 1;
-    color: darkred;
-	}
-
-}
-@media(max-width:750px){
-	.sides-wrapper{
-	  display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-	  margin:0 auto;
-	}
-}
-#family {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-  #family img {
-    width: 100%;
-    height: auto; }
 
 
-@media (min-width: 768px) {
-  #family {
-    position: unset; }
-  .position-family {
-    position: unset; }
-  .family-content {
-    position: absolute;
-    left: 50%;
-    color: black;
-    text-shadow: unset; }
-  .family-footer {
-    left: 0;
-    right: 50%; }
-  .ohiowraper {
-    display:block;
-  }
-}
-.family-content {
-  position: absolute;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-  padding-left: 15px; }
-
-  .family-content button {
-    cursor: pointer;
-    background-color: #d92228;
-    width: auto;
-    padding: 10px;
-    margin-left: 15px;
-    font-size: 17px;
-    color: #fff;
-    border-radius: 30px;
-    border: 0; }
-
-.background-img-style {
-  background-color: #f7f7f7; }
-.background-img-style > div > div > div {
-  cursor: pointer;
-}
-#small-left-img {
-  background-image: url("https://imgur.com/EHkwgvT.png");
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-  .small-hero-img {
-    height: 260px;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35); }
-    .small-hero-img h6 {
-      font-size: 24px;
-      font-weight: bold;
-      border-radius: 8px; }
-
-      .topmain {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-
-        .topmain {
-          position: relative;
-          height: 100%;
-          margin: auto;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          z-index: 2;
-          color: white; }
-          .topmain h1 {
-            font-size: 32px;
-            font-weight: 900;
-            margin: 15px 0;
-            text-align: center; }
-          .topmain button {
-            width: 120px;
-            background: none;
-            border: 1px solid #fff;
-            border-radius: 20px;
-            color: #ffffff;
-            padding: 7px 10px;
-            margin-left: 15px;
-            cursor: pointer; }
-          .topmain button:hover {
-            background-color: #ffffff;
-            color: black; }
-
-            @media (max-width: 768px) {
-              .change-img-size {
-                height: 200px; }
-              .take-down h1 {
-                font-size: 24px; }
-              .m-none {
-                padding: 0px; } }
-
-                #small-right-img {
-                  background-image: url("https://imgur.com/fWCKU9p.jpg");
-                  -webkit-box-pack: end;
-                  -ms-flex-pack: end;
-                  justify-content: flex-end; }
 
 
-                  .small-hero-img {
-                    height: 260px;
-                    background-size: cover;
-                    background-position: center center;
-                    border-radius: 10px;
-                    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
-                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35); }
-                    .small-hero-img h6 {
-                      font-size: 24px;
-                      font-weight: bold;
-                      border-radius: 8px; }
 
 
-                      .styledh1 {
-                        text-shadow: 0px 1px 1px #4d4d4d;
-                        color: #222;
-                        font: 80px 'LeagueGothicRegular';
-                        margin: 3% 0;
-                        text-align: center;
-                      }
-                      .styledh3 {
-                        text-shadow: 0px 1px 1px #4d4d4d;
-                        color: #222;
-                        font: 24px 'LeagueGothicRegular';
-                        margin: 3% 0;
-                        text-align: center;
-                      }
+
+
+
+
+
+
+
+          
+          
+          
+
+            
+
+                
+
+
+                  
+
+
+                      
+                      

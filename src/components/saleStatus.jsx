@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../styling/saleStatus.css';
+
 class SaleStatus extends React.Component{
     constructor(props){
         super(props);

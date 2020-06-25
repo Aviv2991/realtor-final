@@ -1,7 +1,10 @@
 import React from 'react';
 
+import '../styling/familyAgent.css';
+
 import family_one from '../imgs/family_one.png';
 import family_two from '../imgs/family_two.png';
+
 
 class FamilyImagesAndForm extends React.Component {
 

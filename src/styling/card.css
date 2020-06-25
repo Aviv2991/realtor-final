@@ -1,0 +1,7 @@
+.card-wrapper:hover{
+    box-shadow:0 0 8px rgba(0,0,0,.5);
+  }
+   .card-wrapper{
+    position: relative;
+    margin-bottom: 50px;
+  }

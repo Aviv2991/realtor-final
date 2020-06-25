@@ -6,6 +6,11 @@ import RentingInsidersGuide from './inside-guide.jsx';
 import NumericStats from './numericStats';
 import HomePageIcons from './homePageIcons';
 import GoToGallery from './goToGallery';
+
+import '../styling/familyAgent.css';
+
+
+
  
 class Home extends React.Component {
     constructor(props) {
