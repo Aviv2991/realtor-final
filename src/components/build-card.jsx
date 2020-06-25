@@ -8,8 +8,7 @@ import Garbage from './garbage';
 import Deny from './deny';
 import Approval from './approval';
 import Recover from './recover';
-import SaleStatus from './saleStatus';
-
+  
 import '../styling/card.css';
 
 class BuildCard extends React.Component {
