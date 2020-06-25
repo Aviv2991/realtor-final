@@ -1,8 +1,7 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 
-import {navProps} from '../nav.js';
-import {Navbar,Nav,Fade,Dropdown,Button} from 'react-bootstrap';
+import {Navbar,Nav,Dropdown,Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 import GoToHomePage from './goToHomePageLogo';
@@ -113,7 +112,6 @@ class BuildNavigation extends React.Component {
             
 export default BuildNavigation;
 
-const fadeStyle={display:"flex",position:"absolute",background: 'linear-gradient(74deg, rgba(102,107,154,1) 0%, rgba(93,100,103,1) 0%, rgba(41,29,29,1) 100%)',zIndex:"999",left:"0",width:'100%',top:'50px',transition:'1s'};
 const upperLinksStyle={margin:'0 5px',textDecoration:'none',color:'rgba(255,255,255,.5)'}
 
 

@@ -1,9 +1,7 @@
 import React from 'react';
 
 class Price extends React.Component {
-    constructor(props){
-        super(props);
-    }
+
     numberWithCommas = (num) =>{
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }

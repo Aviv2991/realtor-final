@@ -1,7 +1,6 @@
 import React from 'react';
+
 import BuildCard from './build-card';
-import {Link} from 'react-router-dom';
-import {Button} from 'react-bootstrap';
 import RentingInsidersGuide from './inside-guide.jsx';
 import NumericStats from './numericStats';
 import HomePageIcons from './homePageIcons';

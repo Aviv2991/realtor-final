@@ -5,7 +5,7 @@ import {Form} from 'react-bootstrap';
 import validate, {field} from '../validator';
 import InputErrors from '../inputError'; 
 
-import {getAllCountries,getCitiesByCountryName} from '../api/controllers/countries';
+import {getAllCountries} from '../api/controllers/countries';
 import {addNewApartment} from '../api/controllers/apartments';
 import {propertyTypes} from '../filterValues.js';
 
