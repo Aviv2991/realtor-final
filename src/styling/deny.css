@@ -1,0 +1,8 @@
+.deny{
+    position: absolute;
+    bottom: 29%;
+    left: 15%;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+  }

@@ -1,0 +1,8 @@
+.garbage{
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+  }

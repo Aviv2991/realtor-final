@@ -4,6 +4,8 @@ import {OverlayTrigger,Tooltip} from 'react-bootstrap';
 
 import {denyApartmentById} from '../api/controllers/apartments';
 
+import '../styling/deny.css';
+
 class Deny extends React.Component{
 
     handleDenying= async () => {

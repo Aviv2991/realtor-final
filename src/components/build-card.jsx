@@ -10,6 +10,8 @@ import Approval from './approval';
 import Recover from './recover';
 import SaleStatus from './saleStatus';
 
+import '../styling/card.css';
+
 class BuildCard extends React.Component {
     saleStatusToUppercase=(saleStatus)=>{
         return saleStatus.charAt(0).toUpperCase() + saleStatus.slice(1)

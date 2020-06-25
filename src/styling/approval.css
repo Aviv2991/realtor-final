@@ -1,0 +1,8 @@
+.approval{
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+  }

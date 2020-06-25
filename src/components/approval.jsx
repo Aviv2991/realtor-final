@@ -4,6 +4,7 @@ import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
 import {approveApartmentById} from '../api/controllers/apartments';
 
+import '../styling/approval.css';
 
 class Approve extends React.Component{
 

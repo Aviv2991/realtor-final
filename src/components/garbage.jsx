@@ -4,6 +4,8 @@ import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
 import {deleteApartmentById} from '../api/controllers/apartments';
 
+import '../styling/garbage.css';
+
 
 class Garbage extends React.Component{
 

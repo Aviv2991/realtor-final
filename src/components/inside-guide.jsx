@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+import '../styling/familyAgent.css';
+
+
 class RentingInsidersGuide extends React.Component {
     render () {
         return(

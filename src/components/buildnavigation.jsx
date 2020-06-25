@@ -117,30 +117,3 @@ const fadeStyle={display:"flex",position:"absolute",background: 'linear-gradient
 const upperLinksStyle={margin:'0 5px',textDecoration:'none',color:'rgba(255,255,255,.5)'}
 
 
- {/* {navProps.map((data,i) => {
-                            return(
-                                <Nav.Link key = {i} onMouseOver = {() => this.active(i)} onMouseOut = {() => this.active(-1)}>
-                                    <h1 style={{fontSize:"14px"}}>{data.label}</h1>
-                                    <Fade in = {this.state.active === i} unmountOnExit = {true} style = {fadeStyle}>
-                                        <ul>
-                                            {
-                                                data.innerMenu.map((lis,i) => {
-                                                    return(
-                                                        <li key = {i} style = {{width:"100%"}}>
-                                                            {lis.slice(1).map((item,i) => {
-                                                                return (
-                                                                    <div key = {i}>
-                                                                        {/* <h5 className = {'h5gradient'}>{lis[i].headtitle}</h5> */}
-                                                                        {/* <Link to='/apartments' style = {{fontSize:'14px',color:'white',textDecoration:'none'}} key = {i}>{item.title}</Link> */}
-                                                                    {/* </div>
-                                                                )
-                                                            })}
-                                                        </li>
-                                                    );
-                                                })
-                                            }
-                                        </ul>
-                                    </Fade>
-                                </Nav.Link>
-                            );
-                        })} */} 

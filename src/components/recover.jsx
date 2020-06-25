@@ -4,6 +4,8 @@ import {approveApartmentById} from '../api/controllers/apartments';
 
 import {Tooltip,OverlayTrigger} from 'react-bootstrap';
 
+import '../styling/recover.css';
+
 class Recover extends React.Component{
 
     handleRecovery= async ()=>{
